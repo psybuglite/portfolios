@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+nav .nav {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+nav .nav i {
+  color: white;
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/tom-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.textcontent {
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+}
+
+.textcontent h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.textcontent .hello {
+  width: 50px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.textcontent .skillset {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.profile {
+  height: 80vh;
+  display: flex;
+}
+
+.profile .about {
+  width: 50%;
+  background-image: url("../img/ben-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 80px 20px;
+}
+
+.profile .about .abouttext {
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+
+.profile .about .abouttext .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin: aut0 auto;
+  height: 100%;
+}
+
+.profile .about .abouttext .col h4 {
+  font-weight: bold;
+}
+
+.profile .about .abouttext .col p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5rem;
+}
+
+.profile .about .abouttext .col button {
+  border: 1px solid white;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.profile .about .abouttext .col .cv {
+  margin-right: 20px;
+  background: transparent;
+  color: white;
+}
+
+.profile .about .abouttext .col .hire {
+  background: white;
+  color: black;
+}
+
+.profile .doing {
+  width: 50%;
+  padding: 80px 40px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #f1f1f1;
+}
+
+.profile .doing h4 {
+  font-weight: bold;
+}
+
+.profile .doing p {
+  font-size: 0.9rem;
+}
+
+.profile .doing .stuffs {
+  height: 80%;
+}
+
+.profile .doing .stuffs .firststuff {
+  display: flex;
+}
+
+.profile .doing .stuffs .firststuff .stuff:hover {
+  background: #696051;
+  color: white;
+}
+
+.profile .doing .stuffs .firststuff .stuff {
+  padding: 20px 10px;
+  width: 150px;
+  height: 100px;
+  transition: all 0.3s;
+}
+
+.profile .doing .stuffs .firststuff .stuff i {
+  margin: 20px 0px;
+  font-size: 30px;
+}
+
+.profile .doing .stuffs .firststuff .stuff .stuff-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.profile .doing .stuffs .firststuff .stuff .stuff-desc {
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.projs .projfilter {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.projs .projfilter .projnav {
+  display: flex;
+}
+
+.projs .projfilter .projnav p {
+  font-size: 0.7rem;
+  margin: 5px 10px 5px 10px;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.projs .projfilter .projnav p:hover {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  margin: 5px 10px 3px 10px;
+  padding-bottom: 5px;
+}
+
+.projs .projfilter .projnav .all {
+  font-weight: bolder;
+}
+
+.projs .projtiles {
+  height: 70vh;
+  background: #f1f1f1;
+  display: flex;
+}
+
+.projs .projtiles .projtile {
+  flex: 1;
+}
+
+.projs .projtiles .projtile .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projs .projtiles .projtile .middle .text {
+  background-color: #696051;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.projs .projtiles .projtile .web, .projs .projtiles .projtile .sec {
+  height: 50%;
+}
+
+.projs .projtiles .projtile .projpic:hover .middle {
+  opacity: 1;
+}
+
+.projs .projtiles .projtile .projpic:hover img {
+  opacity: 0.3;
+}
+
+.projs .projtiles .projtile .firebase {
+  height: 33.3333%;
+}
+
+.projs .projtiles .projtile .one {
+  background: #dcdcdc;
+}
+
+.projs .projtiles .projtile .two {
+  background: #cecece;
+}
+
+.projs .projtiles .projtile .three {
+  background: #c5c5c5;
+}
+
+.projs .projtiles .projtile .projpic {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.projs .projtiles .projtile .projpic img {
+  width: 100%;
+  transition: all .5s ease;
+  backface-visibility: hidden;
+}
+
+.projs .allproj {
+  padding: 40px;
+  text-align: center;
+}
+
+.projs .allproj a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.projs .allproj a i {
+  margin-left: 20px;
+}
+
+.skills {
+  height: 90vh;
+  color: white;
+  padding: 50px;
+  background: url("../img/47.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+ 
+
+ /*# sourceMappingURL= app.css.map */

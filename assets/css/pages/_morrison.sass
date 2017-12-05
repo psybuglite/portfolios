@@ -1,0 +1,242 @@
+nav
+  position: fixed
+  width: 100%
+  background: rgba(0, 0, 0, 0.5)
+
+  .nav
+    display: flex
+    padding: 20px 40px
+    justify-content: space-between
+    color: white
+    font-size: 28px
+    font-weight: 800
+
+    i
+      color: white
+
+.banner
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-image: url("../img/tom-1.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+
+.textcontent
+  width: 70%
+  margin: 0 auto
+  color: white
+
+  h1
+    text-transform: uppercase
+    font-size: 2em
+    font-weight: bold
+
+  .hello
+    width: 50px
+    padding-bottom: 10px
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5)
+    color: rgba(255, 255, 255, 0.5)
+  
+  .skillset
+    font-size: 0.8rem
+    color: rgba(255, 255, 255, 0.5)
+
+
+.profile
+  height: 80vh
+  display: flex
+
+  .about
+    width: 50%
+    background-image: url("../img/ben-2.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    color: white
+    padding: 80px 20px
+
+    .abouttext
+      width: 50%
+      float: right
+      height: 100%
+
+      .col
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-content: center
+        margin: aut0 auto
+        height: 100%
+
+        h4
+          font-weight: bold
+
+        p
+          font-size: 0.9rem
+          color: rgba(255, 255, 255, 0.5)
+          line-height: 1.5rem
+
+        button
+          border: 1px solid white
+          padding: 8px 16px
+          font-size: 0.9rem
+          font-weight: bolder
+          
+        .cv
+          margin-right: 20px
+          background: transparent
+          color: white
+
+        .hire
+          background: white
+          color: black
+  
+  .doing
+    width: 50%
+    padding: 80px 40px 50px 40px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background: #f1f1f1
+
+    h4
+      font-weight: bold
+
+    p
+      font-size: 0.9rem
+
+    .stuffs
+      height: 80%
+
+      .firststuff
+        display: flex
+
+        .stuff:hover
+          background: #696051
+          color: white
+
+        .stuff
+          padding: 20px 10px
+          width: 150px
+          height: 100px
+          transition: all 0.3s
+
+          i
+            margin: 20px 0px
+            font-size: 30px
+
+          .stuff-title
+            font-size: 0.8rem
+            font-weight: 600
+            margin: 10px 0px
+
+          .stuff-desc
+            font-size: 0.6rem
+            font-weight: lighter
+
+.projs
+  .projfilter
+    padding: 50px 
+    display: flex
+    justify-content: space-around
+
+    .projnav
+      display: flex
+
+      p
+        font-size: 0.7rem
+        margin: 5px 10px 5px 10px
+        padding-bottom: 5px
+        transition: all 0.3s
+
+
+      p:hover
+        border-bottom: 2px solid black
+        cursor: pointer
+        margin: 5px 10px 3px 10px
+        padding-bottom: 5px
+
+      .all
+        font-weight: bolder
+
+  .projtiles
+    height: 70vh
+    background: #f1f1f1
+    display: flex
+
+    .projtile
+      flex: 1
+
+      .middle
+        transition: .5s ease
+        opacity: 0
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        -ms-transform: translate(-50%, -50%)
+        text-align: center
+        .text
+          background-color: #696051
+          color: white
+          font-size: 12px
+          text-decoration: none
+          padding: 10px 20px
+
+      .web, .sec
+        height: 50%
+
+      .projpic:hover .middle
+        opacity: 1
+
+      .projpic:hover img
+        opacity: 0.3
+
+      .firebase
+        height: 33.3333%
+
+      .one
+        background: #dcdcdc
+
+      .two
+        background: #cecece
+
+      .three
+        background: #c5c5c5
+
+      .projpic
+        position: relative
+        height: 100%
+        width: 100%
+
+        img
+          width: 100%
+          transition: all .5s ease;
+          backface-visibility: hidden;
+
+  .allproj
+    padding: 40px
+    text-align: center
+
+    a
+      color: black
+      font-weight: 600
+      text-decoration: none
+      font-size: 0.9rem
+
+      i
+        margin-left: 20px
+
+
+.skills
+  height: 90vh
+  color: white
+  padding: 50px
+  background: url("../img/47.jpg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
