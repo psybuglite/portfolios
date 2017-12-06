@@ -4,6 +4,10 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -147,12 +151,12 @@ nav .nav i {
 .profile .doing .stuffs .firststuff .stuff:hover {
   background: #696051;
   color: white;
+  transform: scale(1.1);
 }
 
 .profile .doing .stuffs .firststuff .stuff {
   padding: 20px 10px;
   width: 150px;
-  height: 100px;
   transition: all 0.3s;
 }
 
@@ -238,7 +242,8 @@ nav .nav i {
 }
 
 .projs .projtiles .projtile .projpic:hover img {
-  opacity: 0.3;
+  opacity: 0.1;
+  transform: scale(1.1);
 }
 
 .projs .projtiles .projtile .firebase {
@@ -285,15 +290,214 @@ nav .nav i {
   margin-left: 20px;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+}
+
 .skills {
   height: 90vh;
   color: white;
-  padding: 50px;
   background: url("../img/47.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills .skillarea {
+  height: 70%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills .stacks {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.skills .stacks .stack:hover {
+  transform: scale(1.2);
+}
+
+.skills .stacks .stack {
+  position: relative;
+  width: 100px;
+  transition: all 0.3s;
+}
+
+.skills .stacks .stack .stackitem {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
+}
+
+.skills .stacks .stack .s1 {
+  border-top: 5px solid #696051;
+}
+
+.skills .stacks .stack .s2 {
+  border-bottom: 5px solid #696051;
+}
+
+.skills .stacks .stack .s3 {
+  border-left: 5px solid #696051;
+}
+
+.skills .stacks .photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  transform: translate(-50%, -45%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.skills .stacks img {
+  width: 100%;
+}
+
+.skills button {
+  border: 1px solid white;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: white;
+  background: transparent;
+  transition: all 0.4s;
+  width: 200px;
+}
+
+.skills button:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.skills p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.time {
+  height: 80vh;
+}
+
+.time h3 {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.time .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.time .timeline {
+  color: white;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.time .timeline .container {
+  padding: 0px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.time .timeline .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: black;
+  border: 4px solid pink;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.time .timeline .left {
+  left: 0;
+}
+
+.time .timeline .right {
+  left: 50%;
+}
+
+.time .timeline .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid black;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent black;
+}
+
+.time .timeline .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid black;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.time .timeline .right::after {
+  left: -16px;
+}
+
+.time .timeline .content {
+  padding: 0px 30px;
+  background-color: black;
+  position: relative;
+  border-radius: 6px;
 }
  
 
