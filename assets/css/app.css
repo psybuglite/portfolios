@@ -420,7 +420,7 @@ nav .nav i {
 .time .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
+  width: 2px;
   background-color: black;
   top: 0;
   bottom: 0;
@@ -445,12 +445,12 @@ nav .nav i {
 .time .timeline .container::after {
   content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: black;
-  border: 4px solid pink;
-  top: 15px;
+  width: 10px;
+  height: 10px;
+  right: -5px;
+  background-color: white;
+  border: 2px solid black;
+  top: 0px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -467,7 +467,7 @@ nav .nav i {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 0px;
   width: 0;
   z-index: 1;
   right: 30px;
@@ -480,24 +480,23 @@ nav .nav i {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 0px;
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid black;
+  border: medium solid pink;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent black transparent transparent;
 }
 
 .time .timeline .right::after {
-  left: -16px;
+  left: -9px;
 }
 
 .time .timeline .content {
   padding: 0px 30px;
   background-color: black;
   position: relative;
-  border-radius: 6px;
 }
  
 
