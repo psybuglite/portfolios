@@ -31,7 +31,7 @@ nav
 
   h1
     text-transform: uppercase
-    font-size: 2em
+    font-size: 2rem
     font-weight: bold
 
   .hello
@@ -73,6 +73,7 @@ nav
 
         h4
           font-weight: bold
+          font-size: 1rem
 
         p
           font-size: 0.9rem
@@ -104,6 +105,7 @@ nav
 
     h4
       font-weight: bold
+      font-size: 1rem
 
     p
       font-size: 0.9rem
@@ -137,11 +139,17 @@ nav
             font-size: 0.6rem
             font-weight: lighter
 
-.projs
+.projs  
   .projfilter
     padding: 50px 
     display: flex
     justify-content: space-around
+
+    .projtitle
+      h3
+        font-size: 1rem
+        font-weight: bolder
+        margin: 5px
 
     .projnav
       display: flex
@@ -151,7 +159,6 @@ nav
         margin: 5px 10px 5px 10px
         padding-bottom: 5px
         transition: all 0.3s
-
 
       p:hover
         border-bottom: 2px solid black
@@ -230,6 +237,7 @@ nav
 
       i
         margin-left: 20px
+        font-size: 1rem
 
 @-webkit-keyframes spin
   0%
@@ -240,6 +248,7 @@ nav
   
   50%
     -webkit-transform: rotate(-180deg)
+    -webkit-transform: rotate(270deg)
 
 
 @keyframes spin
@@ -263,6 +272,7 @@ nav
   display: flex
   flex-direction: column
   justify-content: center
+  font-size: 1rem
 
   .skillarea
     height: 70%
@@ -308,7 +318,7 @@ nav
       top: 50%
       left: 50%
       width: 60px
-      transform: translate(-50%, -45%)
+      transform: translate(-50%, -50%)
       -ms-transform: translate(-50%, -50%)
 
     img
@@ -336,79 +346,113 @@ nav
 
 .time
   height: 80vh
+  font-size: 1rem
   
   h3
     margin: 50px 0px
     text-align: center
+    font-size: 1rem
 
   .timeline::after
     content: ''
     position: absolute
     width: 2px
-    background-color: black
+    background-color: #c5c5c5
     top: 0
     bottom: 0
     left: 50%
     margin-left: -3px
   
   .timeline
-    color: white
+    color: pink
     position: relative
     max-width: 900px
     margin: 0 auto
 
-    .container
-      padding: 0px 40px
-      position: relative
-      background-color: inherit
-      width: 50%
+  .container
+    padding: 0px 40px
+    position: relative
+    background-color: inherit
+    width: 50%
+    margin: 15px 0px
 
-    .container::after
-      content: ''
-      position: absolute
-      width: 10px
-      height: 10px
-      right: -5px
-      background-color: white
-      border: 2px solid black
-      top: 0px
-      border-radius: 50%
-      z-index: 1
+  .container::after
+    content: ''
+    position: absolute
+    width: 10px
+    height: 10px
+    right: -5px
+    background-color: white
+    border: 2px solid #c5c5c5
+    top: 0px
+    border-radius: 50%
+    z-index: 1
 
-    .left
-      left: 0
+  .left
+    left: 0
 
-    .right
-      left: 50%
+  .right
+    left: 50%
 
-    .left::before
-      content: " "
-      height: 0
-      position: absolute
-      top: 0px
-      width: 0
-      z-index: 1
-      right: 30px
-      border: medium solid black
-      border-width: 10px 0 10px 10px
-      border-color: transparent transparent transparent black
+  .left::before
+    content: " "
+    height: 0
+    position: absolute
+    top: 0px
+    width: 0
+    z-index: 1
+    right: 33px
+    border: medium solid black
+    border-width: 7px 0 7px 7px
+    border-color: transparent transparent transparent #696051
 
-    .right::before
-      content: " "
-      height: 0
-      position: absolute
-      top: 0px
-      width: 0
-      z-index: 1
-      left: 30px
-      border: medium solid pink
-      border-width: 10px 10px 10px 0
-      border-color: transparent black transparent transparent
+  .right::before
+    content: " "
+    height: 0
+    position: absolute
+    top: 0px
+    width: 0
+    z-index: 1
+    left: 33px
+    border: medium solid pink
+    border-width: 7px 7px 7px 0
+    border-color: transparent #696051 transparent transparent
 
-    .right::after
-      left: -9px
+  .right::after
+    left: -9px
 
-    .content
-      padding: 0px 30px
-      background-color: black
-      position: relative
+  .content
+    position: relative
+
+
+
+  .left
+    text-align: right
+
+    h2
+      float: right
+
+  h2
+    font-size: 1.1rem
+    color: white
+    background-color: #696051
+    padding: 5px 10px
+    width: 40%
+    font-weight: lighter
+
+  p
+    font-size: 0.9rem
+    clear: both
+    color: #696051
+    padding: 10px
+
+.testify
+  height: 60vh
+  background: #696051
+
+.affiliates
+  height: 25vh
+
+footer
+  height: 40vh
+  background: #696051

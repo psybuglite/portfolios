@@ -2,9 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:800");
 @import url("https://fonts.googleapis.com/css?family=Poppins:600");
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
+}
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+  display: block;
+  content: none;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -49,7 +58,7 @@ nav .nav i {
 
 .textcontent h1 {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -97,6 +106,7 @@ nav .nav i {
 
 .profile .about .abouttext .col h4 {
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .profile .about .abouttext .col p {
@@ -134,6 +144,7 @@ nav .nav i {
 
 .profile .doing h4 {
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .profile .doing p {
@@ -180,6 +191,12 @@ nav .nav i {
   padding: 50px;
   display: flex;
   justify-content: space-around;
+}
+
+.projs .projfilter .projtitle h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 5px;
 }
 
 .projs .projfilter .projnav {
@@ -288,6 +305,7 @@ nav .nav i {
 
 .projs .allproj a i {
   margin-left: 20px;
+  font-size: 1rem;
 }
 
 @-webkit-keyframes spin {
@@ -299,6 +317,7 @@ nav .nav i {
   }
   50% {
     -webkit-transform: rotate(-180deg);
+    -webkit-transform: rotate(270deg);
   }
 }
 
@@ -325,6 +344,7 @@ nav .nav i {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1rem;
 }
 
 .skills .skillarea {
@@ -378,7 +398,7 @@ nav .nav i {
   top: 50%;
   left: 50%;
   width: 60px;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
@@ -410,18 +430,20 @@ nav .nav i {
 
 .time {
   height: 80vh;
+  font-size: 1rem;
 }
 
 .time h3 {
   margin: 50px 0px;
   text-align: center;
+  font-size: 1rem;
 }
 
 .time .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
-  background-color: black;
+  background-color: #c5c5c5;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -429,74 +451,137 @@ nav .nav i {
 }
 
 .time .timeline {
-  color: white;
+  color: pink;
   position: relative;
   max-width: 900px;
   margin: 0 auto;
 }
 
-.time .timeline .container {
+.time .container {
   padding: 0px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
+  margin: 15px 0px;
 }
 
-.time .timeline .container::after {
+.time .container::after {
   content: '';
   position: absolute;
   width: 10px;
   height: 10px;
   right: -5px;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #c5c5c5;
   top: 0px;
   border-radius: 50%;
   z-index: 1;
 }
 
-.time .timeline .left {
+.time .left {
   left: 0;
 }
 
-.time .timeline .right {
+.time .right {
   left: 50%;
 }
 
-.time .timeline .left::before {
+.time .left::before {
   content: " ";
   height: 0;
   position: absolute;
   top: 0px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  right: 33px;
   border: medium solid black;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent black;
+  border-width: 7px 0 7px 7px;
+  border-color: transparent transparent transparent #696051;
 }
 
-.time .timeline .right::before {
+.time .right::before {
   content: " ";
   height: 0;
   position: absolute;
   top: 0px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: 33px;
   border: medium solid pink;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent black transparent transparent;
+  border-width: 7px 7px 7px 0;
+  border-color: transparent #696051 transparent transparent;
 }
 
-.time .timeline .right::after {
+.time .right::after {
   left: -9px;
 }
 
-.time .timeline .content {
-  padding: 0px 30px;
-  background-color: black;
+.time .content {
   position: relative;
+}
+
+.time .left {
+  text-align: right;
+}
+
+.time .left h2 {
+  float: right;
+}
+
+.time h2 {
+  font-size: 1.1rem;
+  color: white;
+  background-color: #696051;
+  padding: 5px 10px;
+  width: 40%;
+  font-weight: lighter;
+}
+
+.time p {
+  font-size: 0.9rem;
+  clear: both;
+  color: #696051;
+  padding: 10px;
+}
+
+.testify {
+  height: 60vh;
+  background: #696051;
+}
+
+.affiliates {
+  height: 25vh;
+}
+
+footer {
+  height: 40vh;
+  background: #696051;
+}
+
+@media screen and (max-width: 700px) {
+  .time .timeline::after {
+    left: 31px;
+  }
+  .time .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .time .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .time .left::after {
+    left: 15px;
+  }
+  .time .right {
+    left: 0%;
+  }
+  .time .right::after {
+    left: 15px;
+  }
 }
  
 
