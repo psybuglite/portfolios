@@ -86,7 +86,7 @@ nav .nav i {
   background-size: cover;
   background-position: center center;
   color: white;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .profile .about .abouttext {
@@ -135,7 +135,7 @@ nav .nav i {
 
 .profile .doing {
   width: 50%;
-  padding: 80px 40px 50px 40px;
+  padding: 60px 40px 50px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -172,7 +172,7 @@ nav .nav i {
 }
 
 .profile .doing .stuffs .firststuff .stuff i {
-  margin: 20px 0px;
+  margin: 10px 0px;
   font-size: 30px;
 }
 
@@ -547,16 +547,117 @@ nav .nav i {
 
 .testify {
   height: 60vh;
-  background: #696051;
+  background-image: url("../img/icons/images.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.testify h4 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.testify .tst {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testify .tst .carousel {
+  margin: 0px 50px;
+}
+
+.testify .tst .carousel-control {
+  position: relative;
+  background: none;
+}
+
+.testify .tst .item {
+  height: 250px;
+  width: 450px;
+  background: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.testify .tst .item img {
+  width: 65px;
+  border: 2px solid #696051;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.testify .tst .item p {
+  padding: 15px;
+  font-style: italic;
+}
+
+.testify .tst .item h4 {
+  font-weight: lighter;
+}
+
+.testify .tst a {
+  width: 50px;
+  color: white;
+}
+
+.testify .tst .glyphicon {
+  color: black;
+}
+
+.testify .tst .glyphicon:hover {
+  cursor: pointer;
 }
 
 .affiliates {
   height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.affiliates .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.affiliates .container .aff {
+  width: 15%;
+}
+
+.affiliates .container .aff img {
+  width: 100%;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.affiliates .container .aff img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 footer {
   height: 40vh;
-  background: #696051;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+footer h1 {
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+
+footer .social {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (max-width: 700px) {
