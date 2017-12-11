@@ -572,6 +572,10 @@ nav .nav i {
   margin: 0px 50px;
 }
 
+.testify .tst .carousel-inner {
+  background: transparent;
+}
+
 .testify .tst .carousel-control {
   position: relative;
   background: none;
@@ -583,6 +587,7 @@ nav .nav i {
   background: white;
   padding: 25px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .testify .tst .item img {
