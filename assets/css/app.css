@@ -768,6 +768,9 @@ footer .social .linkedin:hover {
   .time .left h2 {
     float: none;
   }
+  .time p {
+    font-size: 0.7rem;
+  }
   .profile {
     display: block;
   }
@@ -928,6 +931,95 @@ footer .social .linkedin:hover {
     line-height: 1.1rem;
     color: rgba(255, 255, 255, 0.5);
     margin: 15px 0px 15px 0px;
+  }
+  .projs .projfilter {
+    padding: 20px 0px;
+  }
+  .projs .projfilter .projtitle h3 {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin: 5px;
+  }
+  .projs .projfilter .projnav {
+    display: flex;
+  }
+  .projs .projfilter .projnav p {
+    font-size: 0.7rem;
+    margin: 5px 5px 5px 5px;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+  }
+  .projs .projfilter .projnav p:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    margin: 5px 5px 3px 5px;
+    padding-bottom: 5px;
+  }
+  .projs .projfilter .projnav .all {
+    font-weight: bolder;
+  }
+  .projs .projtiles {
+    background: #f1f1f1;
+    display: flex;
+  }
+  .projs .projtiles .projtile {
+    flex: 1;
+  }
+  .projs .projtiles .projtile .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .projs .projtiles .projtile .middle .text {
+    background-color: #696051;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  .projs .projtiles .projtile .web, .projs .projtiles .projtile .sec {
+    height: 50%;
+  }
+  .projs .projtiles .projtile .projpic:hover .middle {
+    opacity: 1;
+  }
+  .projs .projtiles .projtile .projpic:hover img {
+    opacity: 0.1;
+    transform: scale(1.1);
+  }
+  .projs .projtiles .projtile .firebase {
+    height: 33.3333%;
+  }
+  .projs .projtiles .projtile .one {
+    background: #dcdcdc;
+  }
+  .projs .projtiles .projtile .two {
+    background: #cecece;
+  }
+  .projs .projtiles .projtile .three {
+    background: #c5c5c5;
+  }
+  .projs .projtiles .projtile .projpic {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .projs .projtiles .projtile .projpic img {
+    width: 100%;
+    transition: all .5s ease;
+    backface-visibility: hidden;
+  }
+  .projs .allproj {
+    padding: 20px 0px;
+  }
+  .projs h3 {
+    margin-top: 0px;
+    font-size: 0.9rem;
   }
 }
 

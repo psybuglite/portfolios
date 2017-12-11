@@ -32,7 +32,8 @@
 
       h2
         float: none
-
+    p
+      font-size: 0.7rem
 
   .profile
     display: block
@@ -193,6 +194,96 @@
       line-height: 1.1rem
       color: rgba(255,255,255, 0.5)
       margin: 15px 0px 15px 0px
+
+  .projs  
+    .projfilter
+      padding: 20px 0px
+
+      .projtitle
+        h3
+          font-size: 0.9rem
+          font-weight: bolder
+          margin: 5px
+
+      .projnav
+        display: flex
+
+        p
+          font-size: 0.7rem
+          margin: 5px 5px 5px 5px
+          padding-bottom: 5px
+          transition: all 0.3s
+
+        p:hover
+          border-bottom: 2px solid black
+          cursor: pointer
+          margin: 5px 5px 3px 5px
+          padding-bottom: 5px
+
+        .all
+          font-weight: bolder
+
+    .projtiles
+      background: #f1f1f1
+      display: flex
+
+      .projtile
+        flex: 1
+
+        .middle
+          transition: .5s ease
+          opacity: 0
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          -ms-transform: translate(-50%, -50%)
+          text-align: center
+          .text
+            background-color: #696051
+            color: white
+            font-size: 12px
+            text-decoration: none
+            padding: 10px 20px
+
+        .web, .sec
+          height: 50%
+
+        .projpic:hover .middle
+          opacity: 1
+
+        .projpic:hover img
+          opacity: 0.1
+          transform: scale(1.1)
+
+        .firebase
+          height: 33.3333%
+
+        .one
+          background: #dcdcdc
+
+        .two
+          background: #cecece
+
+        .three
+          background: #c5c5c5
+
+        .projpic
+          position: relative
+          height: 100%
+          width: 100%
+
+          img
+            width: 100%
+            transition: all .5s ease;
+            backface-visibility: hidden;
+
+    .allproj
+      padding: 20px 0px
+    h3
+      margin-top: 0px
+      font-size: 0.9rem
+
 
 
 @media screen and (min-width: 768px)
