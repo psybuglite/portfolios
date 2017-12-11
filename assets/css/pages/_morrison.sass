@@ -531,16 +531,63 @@ nav
           opacity: 1
 
 footer
-  height: 40vh
+  height: 50vh
+  padding: 20px
   background: rgba(0,0,0,0.8)
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
   h1
     font-weight: bolder
     color: white
     text-align: center
+
+  h6
+    color: white
+    text-align: center
+
+    a
+      color: lightblue
+
+      &:hover
+        color: lightgreen
+        text-decoration: none
   
   .social
-    border: 2px solid black
-    border-radius: 50%
-    width: 40px
-    height: 40px
+    display: flex
+    width: 600px
+    justify-content: space-around
+    margin: 0 auto
+
+    a
+      color: white
+      padding: 20px 22px
+      background: rgba(255, 255, 255, 0.2)
+      border-radius: 50%     
+      i
+        font-size: 1.8rem
+
+    .fb
+      padding: 20px 27px
+
+    .gmail
+      padding: 20px 20px
+
+    .fb, .gmail, .tweet, .github, .linkedin
+      transition: all 0.5s
+
+    .fb:hover
+      background: #3d5b99
+
+    .tweet:hover
+      background: #00aced
+
+    .github:hover
+      background: rgba(0, 0, 0, 0.8)
+
+    .gmail:hover
+      background: #e64a41
+
+    .linkedin:hover
+      background: #0073a4

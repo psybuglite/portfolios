@@ -648,8 +648,12 @@ nav .nav i {
 }
 
 footer {
-  height: 40vh;
+  height: 50vh;
+  padding: 20px;
   background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer h1 {
@@ -658,11 +662,68 @@ footer h1 {
   text-align: center;
 }
 
+footer h6 {
+  color: white;
+  text-align: center;
+}
+
+footer h6 a {
+  color: lightblue;
+}
+
+footer h6 a:hover {
+  color: lightgreen;
+  text-decoration: none;
+}
+
 footer .social {
-  border: 2px solid black;
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+footer .social a {
+  color: white;
+  padding: 20px 22px;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+}
+
+footer .social a i {
+  font-size: 1.8rem;
+}
+
+footer .social .fb {
+  padding: 20px 27px;
+}
+
+footer .social .gmail {
+  padding: 20px 20px;
+}
+
+footer .social .fb, footer .social .gmail, footer .social .tweet, footer .social .github, footer .social .linkedin {
+  transition: all 0.5s;
+}
+
+footer .social .fb:hover {
+  background: #3d5b99;
+}
+
+footer .social .tweet:hover {
+  background: #00aced;
+}
+
+footer .social .github:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+footer .social .gmail:hover {
+  background: #e64a41;
+}
+
+footer .social .linkedin:hover {
+  background: #0073a4;
 }
 
 @media screen and (max-width: 700px) {
