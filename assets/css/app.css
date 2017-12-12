@@ -782,7 +782,7 @@ footer .social .linkedin:hover {
     font-size: 1rem;
   }
   .profile .about .abouttext .col p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1rem;
   }
   .profile .about .abouttext .col button {
@@ -804,11 +804,21 @@ footer .social .linkedin:hover {
   .profile .doing {
     width: 100%;
   }
+  .profile .doing h4 {
+    font-size: 1rem;
+  }
+  .profile .doing p {
+    font-size: 0.7rem;
+  }
   footer {
-    padding: 40px 10px;
+    padding: 15px 10px;
+  }
+  footer h1 {
+    margin: 0px;
   }
   footer h6 {
     color: white;
+    font-size: 0.6rem;
     text-align: center;
   }
   footer .social {
@@ -819,16 +829,19 @@ footer .social .linkedin:hover {
   }
   footer .social a {
     color: white;
-    padding: 10px 11px;
+    padding: 7px 9px;
   }
   footer .social a i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   footer .social .fb {
-    padding: 10px 15px;
+    padding: 7px 12px;
   }
   footer .social .gmail {
-    padding: 10px 10px;
+    padding: 7px 10px;
+  }
+  footer .social .gmail i {
+    font-size: 1rem;
   }
   .affiliates {
     padding: 30px 0px;
@@ -960,10 +973,7 @@ footer .social .linkedin:hover {
   }
   .projs .projtiles {
     background: #f1f1f1;
-    display: flex;
-  }
-  .projs .projtiles .projtile {
-    flex: 1;
+    display: block;
   }
   .projs .projtiles .projtile .middle {
     transition: .5s ease;
@@ -980,7 +990,7 @@ footer .social .linkedin:hover {
     color: white;
     font-size: 12px;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
   }
   .projs .projtiles .projtile .web, .projs .projtiles .projtile .sec {
     height: 50%;
