@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+
+    <title>
+        Spangler
+    </title>
+
+</head>
+
+<body>
+
+    <!-- html content goes here -->
+
+    <section id="spangler">
+
+        <!-- Start of the search area -->
+
+        <div class="searcharea">
+            <div class="address">
+                <p>King's Palace, Choba Uniport Junction, Port Harcourt, Rivers state</p>
+            </div>
+            <div class="searchbar">
+                <input type="search" name="search" id=""><i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <!-- ehd of the search area -->
+        <!-- Start of the navigation area -->
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">HOME</a>
+                <a href="#news">ABOUT</a>
+                <a href="#contact">PRODUCTS</a>
+                <a href="#" class="krispic"><img src="../img/kris.png" alt=""></a>
+                <a href="#news">GALLERY</a>
+                <a href="#contact">BLOG</a>
+                <a href="#about">CONTACT</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+
+        <!-- ehd of the nav -->
+        <!-- Start of the hero -->
+
+
+        <section class="hero">
+            <div class="wave"></div>
+
+            <div class="waved">
+                <div class="wavedown"></div>
+            </div>
+        </section>
+
+
+
+
+
+    </section>
+
+    <!-- script files and content goes here -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

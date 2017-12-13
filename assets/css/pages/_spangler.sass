@@ -1,0 +1,100 @@
+#spangler
+  height: 100vh
+  position: relative
+  .searcharea
+    height: 6vh
+    display: flex
+    justify-content: space-between
+    padding: 5px 120px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    .address
+      p
+        font-size: 0.8rem
+        margin-bottom: 0px
+        padding: 3px 0px
+    .searchbar
+      input[type=search]
+        border-right: transparent
+        border-top: transparent
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+        border-left: 1px solid rgba(0, 0, 0, 0.2)
+        outline: none
+        padding: 3px 8px
+        font-size: 0.8rem
+      i:hover
+        cursor: pointer
+
+  nav
+    padding: 9px 120px
+    height: 7vh
+    .topnav
+      display: flex
+      justify-content: space-between
+      overflow: hidden
+      a
+        color: purple
+        text-align: center
+        padding: 4px 20px
+        text-decoration: none
+        font-size: 0.9rem
+        transition: all 0.3s
+        &:hover
+          color: black
+
+      .krispic
+        margin: 0px 60px
+        img
+          position: absolute
+          width: 200px
+          top: 40px
+          left: 50%
+          transform: translate(-50%, 0%)
+          -ms-transform: translate(-50%, -50%)
+          z-index: 1000
+
+    .active
+      color: white
+      border: 2px solid purple
+      border-radius: 30px
+
+    .topnav .icon
+      display: none
+
+  .hero
+    height: 77vh
+    background-image: url("../img/cupcakehero.jpg")
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    position: relative
+
+    .wave
+      transform: rotate(180deg)
+      position: relative
+    .waved
+      width: 100%
+      position: absolute
+      bottom: 0
+      z-index: 2000
+    .wave, .wavedown
+      height: 50px
+      &::before
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        background-repeat: repeat
+        height: 10px
+        background-size: 20px 20px
+        background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px)
+      &::after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        background-repeat: repeat
+        height: 15px
+        background-size: 40px 20px
+        background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px)

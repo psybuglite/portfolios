@@ -26,13 +26,13 @@ body {
   display: table;
 }
 
-nav {
+#morrison nav {
   position: fixed;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
 
-nav .nav {
+#morrison nav .nav {
   display: flex;
   padding: 10px 20px;
   justify-content: space-between;
@@ -41,11 +41,11 @@ nav .nav {
   font-weight: 800;
 }
 
-nav .nav i {
+#morrison nav .nav i {
   color: white;
 }
 
-.banner {
+#morrison .banner {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,35 +56,35 @@ nav .nav i {
   background-position: center center;
 }
 
-.textcontent {
+#morrison .textcontent {
   width: 70%;
   margin: 0 auto;
   color: white;
 }
 
-.textcontent h1 {
+#morrison .textcontent h1 {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.textcontent .hello {
+#morrison .textcontent .hello {
   width: 50px;
   padding-bottom: 10px;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
 }
 
-.textcontent .skillset {
+#morrison .textcontent .skillset {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.profile {
+#morrison .profile {
   display: flex;
 }
 
-.profile .about {
+#morrison .profile .about {
   width: 50%;
   background-image: url("../img/ben-2.jpg");
   background-repeat: no-repeat;
@@ -94,13 +94,13 @@ nav .nav i {
   padding: 60px 20px;
 }
 
-.profile .about .abouttext {
+#morrison .profile .about .abouttext {
   width: 50%;
   float: right;
   height: 100%;
 }
 
-.profile .about .abouttext .col {
+#morrison .profile .about .abouttext .col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,18 +109,18 @@ nav .nav i {
   height: 100%;
 }
 
-.profile .about .abouttext .col h4 {
+#morrison .profile .about .abouttext .col h4 {
   font-weight: bold;
   font-size: 1rem;
 }
 
-.profile .about .abouttext .col p {
+#morrison .profile .about .abouttext .col p {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5rem;
 }
 
-.profile .about .abouttext .col button {
+#morrison .profile .about .abouttext .col button {
   border: 1px solid white;
   padding: 8px 16px;
   font-size: 0.9rem;
@@ -128,18 +128,18 @@ nav .nav i {
   margin: 10px 0px;
 }
 
-.profile .about .abouttext .col .cv {
+#morrison .profile .about .abouttext .col .cv {
   margin-right: 20px;
   background: transparent;
   color: white;
 }
 
-.profile .about .abouttext .col .hire {
+#morrison .profile .about .abouttext .col .hire {
   background: white;
   color: black;
 }
 
-.profile .doing {
+#morrison .profile .doing {
   width: 50%;
   padding: 60px 20px 50px 20px;
   display: flex;
@@ -148,95 +148,95 @@ nav .nav i {
   background: #f1f1f1;
 }
 
-.profile .doing h4 {
+#morrison .profile .doing h4 {
   font-weight: bold;
   font-size: 1rem;
 }
 
-.profile .doing p {
+#morrison .profile .doing p {
   font-size: 0.9rem;
 }
 
-.profile .doing .stuffs {
+#morrison .profile .doing .stuffs {
   height: 80%;
 }
 
-.profile .doing .stuffs .firststuff {
+#morrison .profile .doing .stuffs .firststuff {
   display: flex;
 }
 
-.profile .doing .stuffs .firststuff .stuff:hover {
+#morrison .profile .doing .stuffs .firststuff .stuff:hover {
   background: #696051;
   color: white;
   transform: scale(1.1);
 }
 
-.profile .doing .stuffs .firststuff .stuff {
+#morrison .profile .doing .stuffs .firststuff .stuff {
   padding: 20px 10px;
   width: 150px;
   transition: all 0.3s;
 }
 
-.profile .doing .stuffs .firststuff .stuff i {
+#morrison .profile .doing .stuffs .firststuff .stuff i {
   margin: 10px 0px;
   font-size: 30px;
 }
 
-.profile .doing .stuffs .firststuff .stuff .stuff-title {
+#morrison .profile .doing .stuffs .firststuff .stuff .stuff-title {
   font-size: 0.8rem;
   font-weight: 600;
   margin: 10px 0px;
 }
 
-.profile .doing .stuffs .firststuff .stuff .stuff-desc {
+#morrison .profile .doing .stuffs .firststuff .stuff .stuff-desc {
   font-size: 0.6rem;
   font-weight: lighter;
 }
 
-.projs .projfilter {
+#morrison .projs .projfilter {
   padding: 50px;
   display: flex;
   justify-content: space-around;
 }
 
-.projs .projfilter .projtitle h3 {
+#morrison .projs .projfilter .projtitle h3 {
   font-size: 1rem;
   font-weight: bolder;
   margin: 5px;
 }
 
-.projs .projfilter .projnav {
+#morrison .projs .projfilter .projnav {
   display: flex;
 }
 
-.projs .projfilter .projnav p {
+#morrison .projs .projfilter .projnav p {
   font-size: 0.7rem;
   margin: 5px 10px 5px 10px;
   padding-bottom: 5px;
   transition: all 0.3s;
 }
 
-.projs .projfilter .projnav p:hover {
+#morrison .projs .projfilter .projnav p:hover {
   border-bottom: 2px solid black;
   cursor: pointer;
   margin: 5px 10px 3px 10px;
   padding-bottom: 5px;
 }
 
-.projs .projfilter .projnav .all {
+#morrison .projs .projfilter .projnav .all {
   font-weight: bolder;
 }
 
-.projs .projtiles {
+#morrison .projs .projtiles {
   background: #f1f1f1;
   display: flex;
 }
 
-.projs .projtiles .projtile {
+#morrison .projs .projtiles .projtile {
   flex: 1;
 }
 
-.projs .projtiles .projtile .middle {
+#morrison .projs .projtiles .projtile .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -247,7 +247,7 @@ nav .nav i {
   text-align: center;
 }
 
-.projs .projtiles .projtile .middle .text {
+#morrison .projs .projtiles .projtile .middle .text {
   background-color: #696051;
   color: white;
   font-size: 12px;
@@ -255,60 +255,60 @@ nav .nav i {
   padding: 10px 20px;
 }
 
-.projs .projtiles .projtile .web, .projs .projtiles .projtile .sec {
+#morrison .projs .projtiles .projtile .web, #morrison .projs .projtiles .projtile .sec {
   height: 50%;
 }
 
-.projs .projtiles .projtile .projpic:hover .middle {
+#morrison .projs .projtiles .projtile .projpic:hover .middle {
   opacity: 1;
 }
 
-.projs .projtiles .projtile .projpic:hover img {
+#morrison .projs .projtiles .projtile .projpic:hover img {
   opacity: 0.1;
   transform: scale(1.1);
 }
 
-.projs .projtiles .projtile .firebase {
+#morrison .projs .projtiles .projtile .firebase {
   height: 33.3333%;
 }
 
-.projs .projtiles .projtile .one {
+#morrison .projs .projtiles .projtile .one {
   background: #dcdcdc;
 }
 
-.projs .projtiles .projtile .two {
+#morrison .projs .projtiles .projtile .two {
   background: #cecece;
 }
 
-.projs .projtiles .projtile .three {
+#morrison .projs .projtiles .projtile .three {
   background: #c5c5c5;
 }
 
-.projs .projtiles .projtile .projpic {
+#morrison .projs .projtiles .projtile .projpic {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.projs .projtiles .projtile .projpic img {
+#morrison .projs .projtiles .projtile .projpic img {
   width: 100%;
   transition: all .5s ease;
   backface-visibility: hidden;
 }
 
-.projs .allproj {
+#morrison .projs .allproj {
   padding: 40px;
   text-align: center;
 }
 
-.projs .allproj a {
+#morrison .projs .allproj a {
   color: black;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.9rem;
 }
 
-.projs .allproj a i {
+#morrison .projs .allproj a i {
   margin-left: 20px;
   font-size: 1rem;
 }
@@ -338,7 +338,7 @@ nav .nav i {
   }
 }
 
-.skills {
+#morrison .skills {
   color: white;
   background: url("../img/47.jpg");
   background-position: center center;
@@ -352,7 +352,7 @@ nav .nav i {
   padding: 50px 0px;
 }
 
-.skills .skillarea {
+#morrison .skills .skillarea {
   height: 70%;
   width: 70%;
   margin: 0 auto;
@@ -361,24 +361,24 @@ nav .nav i {
   justify-content: space-between;
 }
 
-.skills .stacks {
+#morrison .skills .stacks {
   display: flex;
   width: 500px;
   justify-content: space-between;
   margin: 20px 0px;
 }
 
-.skills .stacks .stack:hover {
+#morrison .skills .stacks .stack:hover {
   transform: scale(1.2);
 }
 
-.skills .stacks .stack {
+#morrison .skills .stacks .stack {
   position: relative;
   width: 100px;
   transition: all 0.3s;
 }
 
-.skills .stacks .stack .stackitem {
+#morrison .skills .stacks .stack .stackitem {
   border: 5px solid #f3f3f3;
   border-radius: 50%;
   width: 100px;
@@ -387,19 +387,19 @@ nav .nav i {
   animation: spin 5s linear infinite;
 }
 
-.skills .stacks .stack .s1 {
+#morrison .skills .stacks .stack .s1 {
   border-top: 5px solid #696051;
 }
 
-.skills .stacks .stack .s2 {
+#morrison .skills .stacks .stack .s2 {
   border-bottom: 5px solid #696051;
 }
 
-.skills .stacks .stack .s3 {
+#morrison .skills .stacks .stack .s3 {
   border-left: 5px solid #696051;
 }
 
-.skills .stacks .photo {
+#morrison .skills .stacks .photo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -408,11 +408,11 @@ nav .nav i {
   -ms-transform: translate(-50%, -50%);
 }
 
-.skills .stacks img {
+#morrison .skills .stacks img {
   width: 100%;
 }
 
-.skills button {
+#morrison .skills button {
   border: 1px solid white;
   padding: 8px 16px;
   font-size: 0.9rem;
@@ -422,32 +422,32 @@ nav .nav i {
   width: 200px;
 }
 
-.skills button:hover {
+#morrison .skills button:hover {
   background: white;
   color: black;
   transform: scale(1.1);
 }
 
-.skills p {
+#morrison .skills p {
   font-size: 0.9rem;
   line-height: 1.3rem;
   color: rgba(255, 255, 255, 0.5);
   margin: 30px 0px 30px 0px;
 }
 
-.time {
+#morrison .time {
   padding: 10px 0px 60px 0px;
   font-size: 1rem;
 }
 
-.time h3 {
+#morrison .time h3 {
   margin: 50px 0px;
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.time .timeline::after {
+#morrison .time .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
@@ -458,20 +458,20 @@ nav .nav i {
   margin-left: -3px;
 }
 
-.time .timeline {
+#morrison .time .timeline {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
 }
 
-.time .container {
+#morrison .time .container {
   padding: 0px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
 
-.time .container::after {
+#morrison .time .container::after {
   content: '';
   position: absolute;
   width: 15px;
@@ -484,17 +484,17 @@ nav .nav i {
   z-index: 1;
 }
 
-.time .left {
+#morrison .time .left {
   left: 0;
   margin-right: 50%;
 }
 
-.time .right {
+#morrison .time .right {
   left: 50%;
   margin-right: 50%;
 }
 
-.time .left::before {
+#morrison .time .left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -507,7 +507,7 @@ nav .nav i {
   border-color: transparent transparent transparent #696051;
 }
 
-.time .right::before {
+#morrison .time .right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -520,23 +520,23 @@ nav .nav i {
   border-color: transparent #696051 transparent transparent;
 }
 
-.time .right::after {
+#morrison .time .right::after {
   left: -9px;
 }
 
-.time .content {
+#morrison .time .content {
   position: relative;
 }
 
-.time .left {
+#morrison .time .left {
   text-align: right;
 }
 
-.time .left h2 {
+#morrison .time .left h2 {
   float: right;
 }
 
-.time h2 {
+#morrison .time h2 {
   font-size: 1.1rem;
   color: white;
   background-color: #696051;
@@ -546,14 +546,14 @@ nav .nav i {
   margin: 0px;
 }
 
-.time p {
+#morrison .time p {
   font-size: 0.9rem;
   clear: both;
   color: #696051;
   padding: 10px;
 }
 
-.testify {
+#morrison .testify {
   padding: 50px 0px;
   background-image: url("../img/icons/images.png");
   background-size: cover;
@@ -565,32 +565,32 @@ nav .nav i {
   justify-content: space-around;
 }
 
-.testify h4 {
+#morrison .testify h4 {
   text-align: center;
   font-weight: bolder;
   margin-bottom: 50px;
 }
 
-.testify .tst {
+#morrison .testify .tst {
   display: flex;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.testify .tst .carousel {
+#morrison .testify .tst .carousel {
   margin: 0px 50px;
 }
 
-.testify .tst .carousel-inner {
+#morrison .testify .tst .carousel-inner {
   background: transparent;
 }
 
-.testify .tst .carousel-control {
+#morrison .testify .tst .carousel-control {
   position: relative;
   background: none;
 }
 
-.testify .tst .item {
+#morrison .testify .tst .item {
   height: 250px;
   width: 450px;
   background: white;
@@ -599,64 +599,64 @@ nav .nav i {
   border-radius: 10px;
 }
 
-.testify .tst .item img {
+#morrison .testify .tst .item img {
   width: 65px;
   border: 2px solid #696051;
   border-radius: 50%;
   margin: auto;
 }
 
-.testify .tst .item p {
+#morrison .testify .tst .item p {
   padding: 15px;
   font-style: italic;
 }
 
-.testify .tst .item h4 {
+#morrison .testify .tst .item h4 {
   font-weight: lighter;
 }
 
-.testify .tst a {
+#morrison .testify .tst a {
   width: 50px;
   color: white;
 }
 
-.testify .tst .glyphicon {
+#morrison .testify .tst .glyphicon {
   color: black;
 }
 
-.testify .tst .glyphicon:hover {
+#morrison .testify .tst .glyphicon:hover {
   cursor: pointer;
 }
 
-.affiliates {
+#morrison .affiliates {
   padding: 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.affiliates .container {
+#morrison .affiliates .container {
   display: flex;
   justify-content: space-around;
 }
 
-.affiliates .container .aff {
+#morrison .affiliates .container .aff {
   width: 15%;
 }
 
-.affiliates .container .aff img {
+#morrison .affiliates .container .aff img {
   width: 100%;
   filter: grayscale(100%);
   opacity: 0.5;
   transition: all 0.3s;
 }
 
-.affiliates .container .aff img:hover {
+#morrison .affiliates .container .aff img:hover {
   filter: grayscale(0%);
   opacity: 1;
 }
 
-footer {
+#morrison footer {
   padding: 40px;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -664,245 +664,375 @@ footer {
   justify-content: space-between;
 }
 
-footer h1 {
+#morrison footer h1 {
   font-weight: bolder;
   color: white;
   text-align: center;
 }
 
-footer h6 {
+#morrison footer h6 {
   color: white;
   text-align: center;
 }
 
-footer h6 a {
+#morrison footer h6 a {
   color: lightblue;
 }
 
-footer h6 a:hover {
+#morrison footer h6 a:hover {
   color: lightgreen;
   text-decoration: none;
 }
 
-footer .container {
+#morrison footer .container {
   max-width: 700px;
 }
 
-footer .social {
+#morrison footer .social {
   display: flex;
   width: 500px;
   justify-content: space-around;
   margin: 20px auto;
 }
 
-footer .social a {
+#morrison footer .social a {
   color: white;
   padding: 20px 22px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
 
-footer .social a i {
+#morrison footer .social a i {
   font-size: 1.8rem;
 }
 
-footer .social .fb {
+#morrison footer .social .fb {
   padding: 20px 27px;
 }
 
-footer .social .gmail {
+#morrison footer .social .gmail {
   padding: 20px 20px;
 }
 
-footer .social .fb, footer .social .gmail, footer .social .tweet, footer .social .github, footer .social .linkedin {
+#morrison footer .social .fb, #morrison footer .social .gmail, #morrison footer .social .tweet, #morrison footer .social .github, #morrison footer .social .linkedin {
   transition: all 0.5s;
 }
 
-footer .social .fb:hover {
+#morrison footer .social .fb:hover {
   background: #3d5b99;
 }
 
-footer .social .tweet:hover {
+#morrison footer .social .tweet:hover {
   background: #00aced;
 }
 
-footer .social .github:hover {
+#morrison footer .social .github:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
-footer .social .gmail:hover {
+#morrison footer .social .gmail:hover {
   background: #e64a41;
 }
 
-footer .social .linkedin:hover {
+#morrison footer .social .linkedin:hover {
   background: #0073a4;
 }
 
+#spangler {
+  height: 100vh;
+  position: relative;
+}
+
+#spangler .searcharea {
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 120px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#spangler .searcharea .address p {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  padding: 3px 0px;
+}
+
+#spangler .searcharea .searchbar input[type=search] {
+  border-right: transparent;
+  border-top: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+}
+
+#spangler .searcharea .searchbar i:hover {
+  cursor: pointer;
+}
+
+#spangler nav {
+  padding: 9px 120px;
+  height: 7vh;
+}
+
+#spangler nav .topnav {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#spangler nav .topnav a {
+  color: purple;
+  text-align: center;
+  padding: 4px 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+#spangler nav .topnav a:hover {
+  color: black;
+}
+
+#spangler nav .topnav .krispic {
+  margin: 0px 60px;
+}
+
+#spangler nav .topnav .krispic img {
+  position: absolute;
+  width: 200px;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#spangler nav .active {
+  color: white;
+  border: 2px solid purple;
+  border-radius: 30px;
+}
+
+#spangler nav .topnav .icon {
+  display: none;
+}
+
+#spangler .hero {
+  height: 77vh;
+  background-image: url("../img/cupcakehero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#spangler .hero .wave {
+  transform: rotate(180deg);
+  position: relative;
+}
+
+#spangler .hero .waved {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2000;
+}
+
+#spangler .hero .wave, #spangler .hero .wavedown {
+  height: 50px;
+}
+
+#spangler .hero .wave::before, #spangler .hero .wavedown::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+#spangler .hero .wave::after, #spangler .hero .wavedown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
 @media screen and (max-width: 700px) {
-  .time .timeline::after {
+  #morrison .time .timeline::after {
     left: 31px;
   }
-  .time .container {
+  #morrison .time .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-  .time .container::before {
+  #morrison .time .container::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent #696051 transparent transparent;
   }
-  .time .left::after {
+  #morrison .time .left::after {
     left: 21px;
   }
-  .time .right {
+  #morrison .time .right {
     left: 0%;
   }
-  .time .right::after {
+  #morrison .time .right::after {
     left: 21px;
   }
-  .time .left {
+  #morrison .time .left {
     text-align: left;
   }
-  .time .left h2 {
+  #morrison .time .left h2 {
     float: none;
   }
-  .time p {
+  #morrison .time p {
     font-size: 0.7rem;
   }
-  .profile {
+  #morrison .profile {
     display: block;
   }
-  .profile .about {
+  #morrison .profile .about {
     width: 100%;
   }
-  .profile .about .abouttext .col h4 {
+  #morrison .profile .about .abouttext .col h4 {
     font-weight: bold;
     font-size: 1rem;
   }
-  .profile .about .abouttext .col p {
+  #morrison .profile .about .abouttext .col p {
     font-size: 0.7rem;
     line-height: 1rem;
   }
-  .profile .about .abouttext .col button {
+  #morrison .profile .about .abouttext .col button {
     border: 1px solid white;
     padding: 4px 8px;
     font-size: 0.8rem;
     font-weight: lighter;
     margin: 10px 0px;
   }
-  .profile .about .abouttext .col .cv {
+  #morrison .profile .about .abouttext .col .cv {
     margin-right: 20px;
     background: transparent;
     color: white;
   }
-  .profile .about .abouttext .col .hire {
+  #morrison .profile .about .abouttext .col .hire {
     background: white;
     color: black;
   }
-  .profile .doing {
+  #morrison .profile .doing {
     width: 100%;
   }
-  .profile .doing h4 {
+  #morrison .profile .doing h4 {
     font-size: 1rem;
   }
-  .profile .doing p {
+  #morrison .profile .doing p {
     font-size: 0.7rem;
   }
-  footer {
+  #morrison footer {
     padding: 15px 10px;
   }
-  footer h1 {
+  #morrison footer h1 {
     margin: 0px;
   }
-  footer h6 {
+  #morrison footer h6 {
     color: white;
     font-size: 0.6rem;
     text-align: center;
   }
-  footer .social {
+  #morrison footer .social {
     display: flex;
     max-width: 340px;
     justify-content: space-around;
     margin: 20px auto;
   }
-  footer .social a {
+  #morrison footer .social a {
     color: white;
     padding: 7px 9px;
   }
-  footer .social a i {
+  #morrison footer .social a i {
     font-size: 1.1rem;
   }
-  footer .social .fb {
+  #morrison footer .social .fb {
     padding: 7px 12px;
   }
-  footer .social .gmail {
+  #morrison footer .social .gmail {
     padding: 7px 10px;
   }
-  footer .social .gmail i {
+  #morrison footer .social .gmail i {
     font-size: 1rem;
   }
-  .affiliates {
+  #morrison .affiliates {
     padding: 30px 0px;
   }
-  .testify {
+  #morrison .testify {
     padding: 30px 0px;
   }
-  .testify h4 {
+  #morrison .testify h4 {
     text-align: center;
     font-weight: bolder;
     margin-bottom: 30px;
     margin-top: 0px;
   }
-  .testify .tst {
+  #morrison .testify .tst {
     display: flex;
     max-width: 600px;
     margin: 0 auto;
     font-size: 0.6rem;
   }
-  .testify .tst .carousel {
+  #morrison .testify .tst .carousel {
     margin: 0px 20px;
   }
-  .testify .tst .item {
+  #morrison .testify .tst .item {
     height: 150px;
     width: 300px;
     padding: 10px;
   }
-  .testify .tst .item img {
+  #morrison .testify .tst .item img {
     width: 35px;
   }
-  .testify .tst .item p {
+  #morrison .testify .tst .item p {
     padding: 10px;
   }
-  .testify .tst .item h4 {
+  #morrison .testify .tst .item h4 {
     font-weight: bolder;
     font-size: 0.6rem;
   }
-  .testify .tst a {
+  #morrison .testify .tst a {
     width: 30px;
     color: white;
   }
-  .skills {
+  #morrison .skills {
     padding: 40px 0px;
   }
-  .skills .skillarea {
+  #morrison .skills .skillarea {
     width: 90%;
     margin: 0 auto;
   }
-  .skills .stacks {
+  #morrison .skills .stacks {
     width: 90%;
     margin: 0px auto;
   }
-  .skills .stacks .stack:hover {
+  #morrison .skills .stacks .stack:hover {
     transform: scale(1.2);
   }
-  .skills .stacks .stack {
+  #morrison .skills .stacks .stack {
     position: relative;
     width: 70px;
     transition: all 0.3s;
   }
-  .skills .stacks .stack .stackitem {
+  #morrison .skills .stacks .stack .stackitem {
     border: 5px solid #f3f3f3;
     border-radius: 50%;
     width: 70px;
@@ -910,16 +1040,16 @@ footer .social .linkedin:hover {
     -webkit-animation: spin 5s linear infinite;
     animation: spin 5s linear infinite;
   }
-  .skills .stacks .stack .s1 {
+  #morrison .skills .stacks .stack .s1 {
     border-top: 5px solid #696051;
   }
-  .skills .stacks .stack .s2 {
+  #morrison .skills .stacks .stack .s2 {
     border-bottom: 5px solid #696051;
   }
-  .skills .stacks .stack .s3 {
+  #morrison .skills .stacks .stack .s3 {
     border-left: 5px solid #696051;
   }
-  .skills .stacks .photo {
+  #morrison .skills .stacks .photo {
     position: absolute;
     width: 40px;
     top: 50%;
@@ -927,10 +1057,10 @@ footer .social .linkedin:hover {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
-  .skills .stacks img {
+  #morrison .skills .stacks img {
     width: 100%;
   }
-  .skills button {
+  #morrison .skills button {
     border: 1px solid white;
     padding: 8px 16px;
     font-size: 0.7rem;
@@ -939,43 +1069,43 @@ footer .social .linkedin:hover {
     transition: all 0.4s;
     width: 150px;
   }
-  .skills p {
+  #morrison .skills p {
     font-size: 0.7rem;
     line-height: 1.1rem;
     color: rgba(255, 255, 255, 0.5);
     margin: 15px 0px 15px 0px;
   }
-  .projs .projfilter {
+  #morrison .projs .projfilter {
     padding: 20px 0px;
   }
-  .projs .projfilter .projtitle h3 {
+  #morrison .projs .projfilter .projtitle h3 {
     font-size: 0.9rem;
     font-weight: bolder;
     margin: 5px;
   }
-  .projs .projfilter .projnav {
+  #morrison .projs .projfilter .projnav {
     display: flex;
   }
-  .projs .projfilter .projnav p {
+  #morrison .projs .projfilter .projnav p {
     font-size: 0.7rem;
     margin: 5px 5px 5px 5px;
     padding-bottom: 5px;
     transition: all 0.3s;
   }
-  .projs .projfilter .projnav p:hover {
+  #morrison .projs .projfilter .projnav p:hover {
     border-bottom: 2px solid black;
     cursor: pointer;
     margin: 5px 5px 3px 5px;
     padding-bottom: 5px;
   }
-  .projs .projfilter .projnav .all {
+  #morrison .projs .projfilter .projnav .all {
     font-weight: bolder;
   }
-  .projs .projtiles {
+  #morrison .projs .projtiles {
     background: #f1f1f1;
     display: block;
   }
-  .projs .projtiles .projtile .middle {
+  #morrison .projs .projtiles .projtile .middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -985,49 +1115,49 @@ footer .social .linkedin:hover {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  .projs .projtiles .projtile .middle .text {
+  #morrison .projs .projtiles .projtile .middle .text {
     background-color: #696051;
     color: white;
     font-size: 12px;
     text-decoration: none;
     padding: 8px 16px;
   }
-  .projs .projtiles .projtile .web, .projs .projtiles .projtile .sec {
+  #morrison .projs .projtiles .projtile .web, #morrison .projs .projtiles .projtile .sec {
     height: 50%;
   }
-  .projs .projtiles .projtile .projpic:hover .middle {
+  #morrison .projs .projtiles .projtile .projpic:hover .middle {
     opacity: 1;
   }
-  .projs .projtiles .projtile .projpic:hover img {
+  #morrison .projs .projtiles .projtile .projpic:hover img {
     opacity: 0.1;
     transform: scale(1.1);
   }
-  .projs .projtiles .projtile .firebase {
+  #morrison .projs .projtiles .projtile .firebase {
     height: 33.3333%;
   }
-  .projs .projtiles .projtile .one {
+  #morrison .projs .projtiles .projtile .one {
     background: #dcdcdc;
   }
-  .projs .projtiles .projtile .two {
+  #morrison .projs .projtiles .projtile .two {
     background: #cecece;
   }
-  .projs .projtiles .projtile .three {
+  #morrison .projs .projtiles .projtile .three {
     background: #c5c5c5;
   }
-  .projs .projtiles .projtile .projpic {
+  #morrison .projs .projtiles .projtile .projpic {
     position: relative;
     height: 100%;
     width: 100%;
   }
-  .projs .projtiles .projtile .projpic img {
+  #morrison .projs .projtiles .projtile .projpic img {
     width: 100%;
     transition: all .5s ease;
     backface-visibility: hidden;
   }
-  .projs .allproj {
+  #morrison .projs .allproj {
     padding: 20px 0px;
   }
-  .projs h3 {
+  #morrison .projs h3 {
     margin-top: 0px;
     font-size: 0.9rem;
   }
@@ -1040,48 +1170,74 @@ footer .social .linkedin:hover {
 }
 
 @media screen and (max-width: 395px) {
-  footer {
+  #morrison footer {
     padding: 40px 0px;
   }
-  footer .social {
+  #morrison footer .social {
     max-width: 270px;
   }
-  .testify {
+  #morrison .testify {
     padding: 20px 0px;
   }
-  .testify h4 {
+  #morrison .testify h4 {
     text-align: center;
     font-weight: bolder;
     margin-bottom: 30px;
     margin-top: 0px;
   }
-  .testify .tst {
+  #morrison .testify .tst {
     display: flex;
     max-width: 600px;
     margin: 0 auto;
     font-size: 0.55rem;
   }
-  .testify .tst .carousel {
+  #morrison .testify .tst .carousel {
     margin: 0px 20px;
   }
-  .testify .tst .item {
+  #morrison .testify .tst .item {
     height: 140px;
     width: 250px;
     padding: 5px;
   }
-  .testify .tst .item img {
+  #morrison .testify .tst .item img {
     width: 35px;
   }
-  .testify .tst .item p {
+  #morrison .testify .tst .item p {
     padding: 10px;
   }
-  .testify .tst .item h4 {
+  #morrison .testify .tst .item h4 {
     font-weight: bolder;
     font-size: 0.6rem;
   }
-  .testify .tst a {
+  #morrison .testify .tst a {
     width: 30px;
     color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #spangler .topnav a:not(:first-child) {
+    display: none;
+  }
+  #spangler .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #spangler .topnav.responsive {
+    position: relative;
+  }
+  #spangler .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #spangler .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
  
