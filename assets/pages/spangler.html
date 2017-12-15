@@ -75,7 +75,20 @@
             <div class="timer">
                 <h4>Special offer this week</h4>
                 <h3>Kids birthday cake with chocolate toys</h3>
-                <h2>Only N15,000</h2>
+                <h2>Only: N15,000</h2>
+                <div class="time">
+                    <span class="day"></span>:
+                    <span class="hour"></span>:
+                    <span class="minute"></span>:
+                    <span class="second"></span>
+                </div>
+                <div class="times">
+                    <span class="day">Days</span>
+                    <span class="hour">Hours</span>
+                    <span class="minute">Minutes</span>
+                    <span class="second">Hours</span>
+                </div>
+                <button>Order Now</button>
             </div>
         </section>
 
@@ -100,6 +113,10 @@
 
         // Update the count down every 1 second
         var x = setInterval(function() {
+            var day = document.querySelector(".day");
+            var hour = document.querySelector(".hour");
+            var minute = document.querySelector(".minute");
+            var second = document.querySelector(".second");
 
             // Get todays date and time
             var now = new Date().getTime();
@@ -113,9 +130,31 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                minutes + "m " + seconds + "s ";
+            // Display the results
+            if (days < 10) {
+                day.innerHTML = `0${days}`;
+            } else {
+                day.innerHTML = days;
+            }
+
+            if (hours < 10) {
+                hour.innerHTML = `0${hours}`;
+            } else {
+                hour.innerHTML = hours;
+            }
+
+            if (minutes < 10) {
+                minute.innerHTML = `0${minutes}`;
+            } else {
+                minute.innerHTML = minutes;
+            }
+
+            if (seconds < 10) {
+                second.innerHTML = `0${seconds}`;
+            } else {
+                second.innerHTML = seconds;
+            }
+
 
             // If the count down is finished, write some text 
             if (distance < 0) {

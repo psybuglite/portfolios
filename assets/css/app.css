@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:500");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Quintessential");
+@import url("https://fonts.googleapis.com/css?family=Niconne");
 * {
   padding: 0px;
   margin: 0px;
@@ -902,7 +903,7 @@ body {
 
 #spangler .promo {
   display: flex;
-  padding: 50px 100px;
+  padding: 100px 100px;
 }
 
 #spangler .promo .promopic {
@@ -911,6 +912,48 @@ body {
 
 #spangler .promo .promopic img {
   width: 100%;
+}
+
+#spangler .promo .timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+}
+
+#spangler .promo .timer h4 {
+  font-size: 1.8rem;
+  font-family: 'Niconne', cursive;
+}
+
+#spangler .promo .timer h3 {
+  font-size: 1.7rem;
+}
+
+#spangler .promo .timer h2 {
+  font-size: 1.5rem;
+}
+
+#spangler .promo .timer .time {
+  font-size: 3.7rem;
+}
+
+#spangler .promo .timer .time span {
+  padding-right: 10px;
+}
+
+#spangler .promo .timer .times {
+  font-size: 1.1rem;
+}
+
+#spangler .promo .timer .times span {
+  padding: 15px;
+}
+
+#spangler .promo .timer button {
+  width: 100px;
+  margin: 60px auto;
 }
 
 @media screen and (max-width: 700px) {
