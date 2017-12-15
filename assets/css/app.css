@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:500");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Quintessential");
-@import url("https://fonts.googleapis.com/css?family=Niconne");
+@import url("https://fonts.googleapis.com/css?family=Della+Respira|Niconne|Prata");
 * {
   padding: 0px;
   margin: 0px;
@@ -903,7 +903,7 @@ body {
 
 #spangler .promo {
   display: flex;
-  padding: 100px 100px;
+  padding: 80px 100px;
 }
 
 #spangler .promo .promopic {
@@ -928,7 +928,8 @@ body {
 }
 
 #spangler .promo .timer h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  font-family: 'Della Respira', serif;
 }
 
 #spangler .promo .timer h2 {
@@ -936,11 +937,13 @@ body {
 }
 
 #spangler .promo .timer .time {
-  font-size: 3.7rem;
+  font-size: 3.5rem;
+  font-family: 'Della Respira', serif;
 }
 
 #spangler .promo .timer .time span {
   padding-right: 10px;
+  font-family: 'Prata', serif;
 }
 
 #spangler .promo .timer .times {
@@ -952,8 +955,14 @@ body {
 }
 
 #spangler .promo .timer button {
-  width: 100px;
+  width: 150px;
   margin: 60px auto;
+  background: #8f47ba;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: purple;
+  color: white;
+  outline: none;
 }
 
 @media screen and (max-width: 700px) {
