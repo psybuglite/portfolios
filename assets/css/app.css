@@ -965,6 +965,24 @@ body {
   outline: none;
 }
 
+#spangler .offers {
+  padding: 50px 150px;
+}
+
+#spangler .offers .offerlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+#spangler .offers .offerlist .offer {
+  width: 20%;
+  text-align: center;
+}
+
+#spangler .offers .offerlist .offer img {
+  width: 100%;
+}
+
 @media screen and (max-width: 700px) {
   #morrison .time .timeline::after {
     left: 31px;
