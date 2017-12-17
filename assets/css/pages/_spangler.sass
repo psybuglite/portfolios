@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Della+Respira|Niconne|Prata')
+$purple: #8f47ba
+.checked 
+  color: orange
 
 
 #spangler
@@ -119,15 +122,16 @@
         font-family: 'Quintessential', cursive;
 
       button
-        background: #8f47ba
+        background: $purple
         padding: 10px 25px
         border-radius: 20px
         border: purple
         outline: none
+        color: white
 
   .promo
     display: flex
-    padding: 80px 100px
+    padding: 80px 100px 40px 100px
 
     .promopic
       width: 40%
@@ -165,7 +169,7 @@
       button
         width: 150px
         margin: 60px auto
-        background: #8f47ba
+        background: $purple
         padding: 10px 20px
         border-radius: 20px
         border: purple
@@ -175,14 +179,14 @@
   .offers
     max-width: 1100px
     margin: 0 auto
-    padding: 100px 0px
+    padding: 50px 0px 100px 0px
 
     .swtcks
       display: flex
       justify-content: center
-      margin: 50px 0px
+      margin: 20px 0px 70px 0px
       .bar
-        height: 47px 
+        height: 72px 
         width: 120px
         border-bottom: 20px solid #f1f1f1
 
@@ -191,6 +195,11 @@
         margin: 0 20px
         h1
           font-size: 2rem
+          margin: 0
+
+        p
+          font-family: 'Niconne', cursive;
+          font-size: 1.5rem
 
     .offerlist
       display: flex
@@ -215,7 +224,7 @@
           left: 0
           border-radius: 50%
           padding: 15px 15px
-          border: 10px dotted pink
+          border: 10px dotted $purple
 
         .tag2
           transform: rotate(-28deg)
@@ -224,13 +233,14 @@
           position: absolute
           top: 1.5%
           left: 1.5%
-          background: pink
+          background: $purple
           border-radius: 50%
-          padding: 13px 7px
+          padding: 10px 6px
           p
             font-size: 0.8rem
             color: white
             transform: rotate(-20deg)
+            margin: 0
 
         .tag3, .tag4
           position: absolute
@@ -238,7 +248,7 @@
           right: 0
           border-radius: 50%
           padding: 15px 15px
-          border: 10px dotted pink
+          border: 10px dotted $purple
 
         .tag4
           transform: rotate(-28deg)
@@ -247,10 +257,43 @@
           position: absolute
           top: 1.5%
           right: 1.5%
-          background: pink
+          background: $purple
           border-radius: 50%
-          padding: 13px 9px
+          padding: 10px 8px
           p
             font-size: 0.8rem
             color: white
             transform: rotate(-20deg)
+            margin: 0
+
+  .toprating
+    background: #f1f1f1
+    .contain
+      max-width: 1000px
+      margin: 0 auto
+      .carousel
+        padding: 80px 0px
+        li 
+          transition: all 0.5s
+          background-color: $purple
+          padding: 7px
+          
+        li.active
+          padding-left: 20px
+          padding-right: 20px
+          transition: all 0.5s
+          color: purple
+        
+        .item
+          text-align: center
+          .criticpic
+            width: 100px
+            margin: 0 auto
+            border: 5px solid white
+            border-radius: 50%
+            img
+              width: 100%
+              border-radius: 50%
+
+          p
+            font-size: 1rem

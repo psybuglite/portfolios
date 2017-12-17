@@ -742,6 +742,10 @@ body {
   background: #0073a4;
 }
 
+.checked {
+  color: orange;
+}
+
 #spangler {
   height: 100vh;
   position: relative;
@@ -899,11 +903,12 @@ body {
   border-radius: 20px;
   border: purple;
   outline: none;
+  color: white;
 }
 
 #spangler .promo {
   display: flex;
-  padding: 80px 100px;
+  padding: 80px 100px 40px 100px;
 }
 
 #spangler .promo .promopic {
@@ -969,17 +974,17 @@ body {
 #spangler .offers {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 0px;
+  padding: 50px 0px 100px 0px;
 }
 
 #spangler .offers .swtcks {
   display: flex;
   justify-content: center;
-  margin: 50px 0px;
+  margin: 20px 0px 70px 0px;
 }
 
 #spangler .offers .swtcks .bar {
-  height: 47px;
+  height: 72px;
   width: 120px;
   border-bottom: 20px solid #f1f1f1;
 }
@@ -991,6 +996,12 @@ body {
 
 #spangler .offers .swtcks .title h1 {
   font-size: 2rem;
+  margin: 0;
+}
+
+#spangler .offers .swtcks .title p {
+  font-family: 'Niconne', cursive;
+  font-size: 1.5rem;
 }
 
 #spangler .offers .offerlist {
@@ -1025,7 +1036,7 @@ body {
   left: 0;
   border-radius: 50%;
   padding: 15px 15px;
-  border: 10px dotted pink;
+  border: 10px dotted #8f47ba;
 }
 
 #spangler .offers .offerlist .offer .tag2 {
@@ -1036,15 +1047,16 @@ body {
   position: absolute;
   top: 1.5%;
   left: 1.5%;
-  background: pink;
+  background: #8f47ba;
   border-radius: 50%;
-  padding: 13px 7px;
+  padding: 10px 6px;
 }
 
 #spangler .offers .offerlist .offer .perc p {
   font-size: 0.8rem;
   color: white;
   transform: rotate(-20deg);
+  margin: 0;
 }
 
 #spangler .offers .offerlist .offer .tag3, #spangler .offers .offerlist .offer .tag4 {
@@ -1053,7 +1065,7 @@ body {
   right: 0;
   border-radius: 50%;
   padding: 15px 15px;
-  border: 10px dotted pink;
+  border: 10px dotted #8f47ba;
 }
 
 #spangler .offers .offerlist .offer .tag4 {
@@ -1064,15 +1076,62 @@ body {
   position: absolute;
   top: 1.5%;
   right: 1.5%;
-  background: pink;
+  background: #8f47ba;
   border-radius: 50%;
-  padding: 13px 9px;
+  padding: 10px 8px;
 }
 
 #spangler .offers .offerlist .offer .percs p {
   font-size: 0.8rem;
   color: white;
   transform: rotate(-20deg);
+  margin: 0;
+}
+
+#spangler .toprating {
+  background: #f1f1f1;
+}
+
+#spangler .toprating .contain {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#spangler .toprating .contain .carousel {
+  padding: 80px 0px;
+}
+
+#spangler .toprating .contain .carousel li {
+  transition: all 0.5s;
+  background-color: #8f47ba;
+  padding: 7px;
+}
+
+#spangler .toprating .contain .carousel li.active {
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.5s;
+  color: purple;
+}
+
+#spangler .toprating .contain .carousel .item {
+  text-align: center;
+}
+
+#spangler .toprating .contain .carousel .item .criticpic {
+  width: 100px;
+  margin: 0 auto;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#spangler .toprating .contain .carousel .item .criticpic img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#spangler .toprating .contain .carousel .item p {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 700px) {
