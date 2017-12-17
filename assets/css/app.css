@@ -1134,6 +1134,40 @@ body {
   font-size: 1rem;
 }
 
+#spangler .weeklyoffer .swtcks {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 70px 0px;
+}
+
+#spangler .weeklyoffer .swtcks .bar {
+  height: 72px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+
+#spangler .weeklyoffer .swtcks .title {
+  text-align: center;
+  margin: 0 20px;
+}
+
+#spangler .weeklyoffer .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#spangler .weeklyoffer .swtcks .title p {
+  font-family: 'Niconne', cursive;
+  font-size: 1.5rem;
+}
+
+#spangler .weeklyoffer .offerspace {
+  height: 60vh;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  background: #ccc;
+}
+
 @media screen and (max-width: 700px) {
   #morrison .time .timeline::after {
     left: 31px;
