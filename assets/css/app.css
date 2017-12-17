@@ -915,6 +915,7 @@ body {
 }
 
 #spangler .promo .timer {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -966,7 +967,30 @@ body {
 }
 
 #spangler .offers {
-  padding: 50px 150px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+
+#spangler .offers .swtcks {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+#spangler .offers .swtcks .bar {
+  height: 47px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+
+#spangler .offers .swtcks .title {
+  text-align: center;
+  margin: 0 20px;
+}
+
+#spangler .offers .swtcks .title h1 {
+  font-size: 2rem;
 }
 
 #spangler .offers .offerlist {
@@ -977,10 +1001,78 @@ body {
 #spangler .offers .offerlist .offer {
   width: 20%;
   text-align: center;
+  position: relative;
 }
 
 #spangler .offers .offerlist .offer img {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+#spangler .offers .offerlist .offer h4 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#spangler .offers .offerlist .offer h5 {
+  font-size: 0.8rem;
+  margin: 3px;
+}
+
+#spangler .offers .offerlist .offer .tag, #spangler .offers .offerlist .offer .tag2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  padding: 15px 15px;
+  border: 10px dotted pink;
+}
+
+#spangler .offers .offerlist .offer .tag2 {
+  transform: rotate(-28deg);
+}
+
+#spangler .offers .offerlist .offer .perc {
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
+  background: pink;
+  border-radius: 50%;
+  padding: 13px 7px;
+}
+
+#spangler .offers .offerlist .offer .perc p {
+  font-size: 0.8rem;
+  color: white;
+  transform: rotate(-20deg);
+}
+
+#spangler .offers .offerlist .offer .tag3, #spangler .offers .offerlist .offer .tag4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 15px 15px;
+  border: 10px dotted pink;
+}
+
+#spangler .offers .offerlist .offer .tag4 {
+  transform: rotate(-28deg);
+}
+
+#spangler .offers .offerlist .offer .percs {
+  position: absolute;
+  top: 1.5%;
+  right: 1.5%;
+  background: pink;
+  border-radius: 50%;
+  padding: 13px 9px;
+}
+
+#spangler .offers .offerlist .offer .percs p {
+  font-size: 0.8rem;
+  color: white;
+  transform: rotate(-20deg);
 }
 
 @media screen and (max-width: 700px) {
