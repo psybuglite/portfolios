@@ -196,6 +196,7 @@ $purple: #8f47ba
         h1
           font-size: 2rem
           margin: 0
+          font-family: 'Quintessential', cursive;
 
         p
           font-family: 'Niconne', cursive;
@@ -268,19 +269,20 @@ $purple: #8f47ba
 
   .toprating
     background: #f1f1f1
+    padding: 30px 0px
     .contain
       max-width: 1000px
       margin: 0 auto
       .carousel
-        padding: 80px 0px
+        padding: 50px 0px 100px 0px
         li 
           transition: all 0.5s
           background-color: $purple
           padding: 7px
           
         li.active
-          padding-left: 20px
-          padding-right: 20px
+          padding-left: 30px
+          padding-right: 30px
           transition: all 0.5s
           color: purple
         
@@ -315,13 +317,105 @@ $purple: #8f47ba
         h1
           font-size: 2rem
           margin: 0
+          font-family: 'Quintessential', cursive;
 
         p
           font-family: 'Niconne', cursive;
           font-size: 1.5rem
 
     .offerspace
-      height: 60vh
-      max-width: 1000px
+      height: 70vh
+      max-width: 1200px
       margin: 0 auto 50px auto
-      background: #ccc
+      display: flex
+      justify-content: space-between
+      font-family: 'Della Respira', serif;
+      .offerbig
+        background: #eee
+        width: 50%
+        margin: 5px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        button
+          background: $purple
+          padding: 10px 30px
+          border: $purple
+          border-radius: 20px
+          color: white
+
+        .offerlabel
+          padding: 30px
+          h1
+            font-family: 'Della Respira', serif;
+          span
+            color: $purple
+            font-weight: 500
+          
+        .offerbottom
+          background: pink
+          margin: 5px 0px 0px 0px
+          height: 50%
+          padding: 100px 20px 20px 20px
+          span
+            font-size: 1.5rem
+            color: $purple
+        .offertop
+          height: 50%
+          margin: 0px 0px 5px 0px
+          display: flex
+          justify-content: space-between
+          .offertopleft
+            width: 50%
+            margin: 0px 5px 0px 0px
+            background: lightblue
+            padding: 10px
+            text-align: right
+          .offertopright
+            width: 50%
+            padding: 10px
+            margin: 0px 0px 0px 5px
+            background: lightgreen
+            button
+              padding: 5px 15px
+              font-size: 0.7rem
+            span
+              font-size: 1.5rem
+              color: $purple
+
+  .hotandnew
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    .swtcks
+      display: flex
+      margin: 50px 0px 70px 0px
+      .bar
+        height: 29px 
+        width: 120px
+        border-bottom: 20px solid #f1f1f1
+
+      .title
+        text-align: center
+        margin: 0 20px 0 0
+        h1
+          font-size: 2rem
+          margin: 0
+          font-family: 'Quintessential', cursive;
+
+        p
+          font-family: 'Niconne', cursive;
+          font-size: 1.5rem
+
+    .hot, .new
+      width: 50%
+      .hotcake
+        display: flex
+        margin: 10px
+        .hotcakepic
+          width: 35%
+          background: lightblue
+        .hotcakedesc
+          width: 65%
+          padding: 5px

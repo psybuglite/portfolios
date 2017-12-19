@@ -997,6 +997,7 @@ body {
 #spangler .offers .swtcks .title h1 {
   font-size: 2rem;
   margin: 0;
+  font-family: 'Quintessential', cursive;
 }
 
 #spangler .offers .swtcks .title p {
@@ -1090,6 +1091,7 @@ body {
 
 #spangler .toprating {
   background: #f1f1f1;
+  padding: 30px 0px;
 }
 
 #spangler .toprating .contain {
@@ -1098,7 +1100,7 @@ body {
 }
 
 #spangler .toprating .contain .carousel {
-  padding: 80px 0px;
+  padding: 50px 0px 100px 0px;
 }
 
 #spangler .toprating .contain .carousel li {
@@ -1108,8 +1110,8 @@ body {
 }
 
 #spangler .toprating .contain .carousel li.active {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: all 0.5s;
   color: purple;
 }
@@ -1154,6 +1156,7 @@ body {
 #spangler .weeklyoffer .swtcks .title h1 {
   font-size: 2rem;
   margin: 0;
+  font-family: 'Quintessential', cursive;
 }
 
 #spangler .weeklyoffer .swtcks .title p {
@@ -1162,10 +1165,139 @@ body {
 }
 
 #spangler .weeklyoffer .offerspace {
-  height: 60vh;
-  max-width: 1000px;
+  height: 70vh;
+  max-width: 1200px;
   margin: 0 auto 50px auto;
-  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Della Respira', serif;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig {
+  background: #eee;
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig button {
+  background: #8f47ba;
+  padding: 10px 30px;
+  border: #8f47ba;
+  border-radius: 20px;
+  color: white;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offerlabel {
+  padding: 30px;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offerlabel h1 {
+  font-family: 'Della Respira', serif;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offerlabel span {
+  color: #8f47ba;
+  font-weight: 500;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offerbottom {
+  background: pink;
+  margin: 5px 0px 0px 0px;
+  height: 50%;
+  padding: 100px 20px 20px 20px;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offerbottom span {
+  font-size: 1.5rem;
+  color: #8f47ba;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offertop {
+  height: 50%;
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
+  width: 50%;
+  margin: 0px 5px 0px 0px;
+  background: lightblue;
+  padding: 10px;
+  text-align: right;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright {
+  width: 50%;
+  padding: 10px;
+  margin: 0px 0px 0px 5px;
+  background: lightgreen;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright button {
+  padding: 5px 15px;
+  font-size: 0.7rem;
+}
+
+#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright span {
+  font-size: 1.5rem;
+  color: #8f47ba;
+}
+
+#spangler .hotandnew {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#spangler .hotandnew .swtcks {
+  display: flex;
+  margin: 50px 0px 70px 0px;
+}
+
+#spangler .hotandnew .swtcks .bar {
+  height: 29px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+
+#spangler .hotandnew .swtcks .title {
+  text-align: center;
+  margin: 0 20px 0 0;
+}
+
+#spangler .hotandnew .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Quintessential', cursive;
+}
+
+#spangler .hotandnew .swtcks .title p {
+  font-family: 'Niconne', cursive;
+  font-size: 1.5rem;
+}
+
+#spangler .hotandnew .hot, #spangler .hotandnew .new {
+  width: 50%;
+}
+
+#spangler .hotandnew .hot .hotcake, #spangler .hotandnew .new .hotcake {
+  display: flex;
+  margin: 10px;
+}
+
+#spangler .hotandnew .hot .hotcake .hotcakepic, #spangler .hotandnew .new .hotcake .hotcakepic {
+  width: 35%;
+  background: lightblue;
+}
+
+#spangler .hotandnew .hot .hotcake .hotcakedesc, #spangler .hotandnew .new .hotcake .hotcakedesc {
+  width: 65%;
+  padding: 5px;
 }
 
 @media screen and (max-width: 700px) {
