@@ -1213,6 +1213,7 @@ body {
 #spangler .weeklyoffer .offerspace .offerbig .offerbottom span {
   font-size: 1.5rem;
   color: #8f47ba;
+  font-weight: 500;
 }
 
 #spangler .weeklyoffer .offerspace .offerbig .offertop {
@@ -1245,11 +1246,12 @@ body {
 #spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright span {
   font-size: 1.5rem;
   color: #8f47ba;
+  font-weight: 500;
 }
 
 #spangler .hotandnew {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -1298,6 +1300,26 @@ body {
 #spangler .hotandnew .hot .hotcake .hotcakedesc, #spangler .hotandnew .new .hotcake .hotcakedesc {
   width: 65%;
   padding: 5px;
+}
+
+#spangler .hotandnew .hot .hotcake .hotcakedesc h3, #spangler .hotandnew .new .hotcake .hotcakedesc h3 {
+  font-size: 0.9rem;
+  margin: 0px;
+}
+
+#spangler .hotandnew .hot .hotcake .hotcakedesc p, #spangler .hotandnew .new .hotcake .hotcakedesc p {
+  font-size: 0.8rem;
+  margin: 10px 0px;
+}
+
+#spangler .hotandnew .hot .hotcake .hotcakedesc button, #spangler .hotandnew .new .hotcake .hotcakedesc button {
+  background: #8f47ba;
+  padding: 5px 15px;
+  border: #8f47ba;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  margin: 10px 0px;
 }
 
 @media screen and (max-width: 700px) {
