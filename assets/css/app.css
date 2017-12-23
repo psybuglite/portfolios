@@ -1322,6 +1322,170 @@ body {
   margin: 10px 0px;
 }
 
+#spangler .pastrychefs {
+  background: #f1f1f1;
+  padding: 50px 20px;
+}
+
+#spangler .pastrychefs .chefs {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#spangler .pastrychefs .chefs .aboutchefs {
+  width: 35%;
+}
+
+#spangler .pastrychefs .chefs .aboutchefs .swtcks {
+  display: flex;
+  margin: 50px 0px 70px 0px;
+}
+
+#spangler .pastrychefs .chefs .aboutchefs .swtcks .bar {
+  height: 29px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+
+#spangler .pastrychefs .chefs .aboutchefs .swtcks .title {
+  text-align: center;
+  margin: 0 20px 0 0;
+}
+
+#spangler .pastrychefs .chefs .aboutchefs .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Quintessential', cursive;
+}
+
+#spangler .pastrychefs .chefs .aboutchefs .swtcks .title p {
+  font-family: 'Niconne', cursive;
+  font-size: 1.5rem;
+}
+
+#spangler .pastrychefs .chefs .aboutchefs button {
+  background: #8f47ba;
+  padding: 5px 15px;
+  border: #8f47ba;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  margin: 10px 0px;
+}
+
+#spangler .pastrychefs .chefs .chef {
+  width: 18%;
+}
+
+#spangler .pastrychefs .chefs .chef {
+  background-color: white;
+  text-align: center;
+}
+
+#spangler .pastrychefs .chefs .chef img {
+  width: 100%;
+}
+
+#spangler .pastrychefs .chefs .chef .aboutchef {
+  padding: 10px;
+}
+
+#spangler .pastrychefs .chefs .chef .aboutchef span {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+#spangler .blogclips .swtcks {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 70px 0px;
+}
+
+#spangler .blogclips .swtcks .bar {
+  height: 72px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+
+#spangler .blogclips .swtcks .title {
+  text-align: center;
+  margin: 0 20px;
+}
+
+#spangler .blogclips .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Quintessential', cursive;
+}
+
+#spangler .blogclips .swtcks .title p {
+  font-family: 'Niconne', cursive;
+  font-size: 1.5rem;
+}
+
+#spangler .blogclips .blogspace {
+  height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Della Respira', serif;
+}
+
+#spangler .blogclips .blogspace .blogbig {
+  background: #eee;
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#spangler .blogclips .blogspace .blogbig button {
+  background: #8f47ba;
+  padding: 10px 30px;
+  border: #8f47ba;
+  border-radius: 20px;
+  color: white;
+}
+
+#spangler .blogclips .blogspace .blogbig .bloglabel {
+  padding: 30px;
+}
+
+#spangler .blogclips .blogspace .blogbig .bloglabel h1 {
+  font-family: 'Della Respira', serif;
+}
+
+#spangler .blogclips .blogspace .blogbig .bloglabel span {
+  color: #8f47ba;
+  font-weight: 500;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogbottom {
+  background: pink;
+  margin: 5px 0px 0px 0px;
+  height: 50%;
+  padding: 20px;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogbottom span {
+  font-size: 1.5rem;
+  color: #8f47ba;
+  font-weight: 500;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogtop {
+  height: 50%;
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  background: lightgreen;
+  padding: 20px;
+}
+
 @media screen and (max-width: 700px) {
   #morrison .time .timeline::after {
     left: 31px;
