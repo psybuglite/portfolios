@@ -1464,6 +1464,15 @@ body {
   font-weight: 500;
 }
 
+#spangler .blogclips .blogspace .blogbig .bloglabel .blogdetails {
+  margin-top: 70px;
+  max-width: 300px;
+}
+
+#spangler .blogclips .blogspace .blogbig .bloglabel .blogdetails button {
+  margin-top: 20px;
+}
+
 #spangler .blogclips .blogspace .blogbig .blogbottom {
   background: pink;
   margin: 5px 0px 0px 0px;
