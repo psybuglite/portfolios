@@ -1533,9 +1533,58 @@ body {
 }
 
 #spangler .map {
-  height: 70vh;
+  height: 85vh;
   width: 100%;
   background: #8f47ba;
+}
+
+#spangler .contactform {
+  position: relative;
+}
+
+#spangler .contactform .form {
+  position: absolute;
+  padding: 20px 40px;
+  margin-left: 130px;
+  top: 100%;
+  width: 400px;
+  height: 85vh;
+  transform: translateY(-100%);
+  background: rgba(143, 71, 186, 0.6);
+  color: white;
+}
+
+#spangler .contactform .form .contact {
+  text-align: center;
+}
+
+#spangler .contactform .form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#spangler .contactform .form form label {
+  font-weight: 400;
+}
+
+#spangler .contactform .form form input, #spangler .contactform .form form textarea {
+  padding: 6px;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  outline: none;
+}
+
+#spangler .contactform .form form button {
+  width: 150px;
+  background: white;
+  padding: 10px 10px;
+  border: white;
+  border-radius: 20px;
+  color: #8f47ba;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 700px) {

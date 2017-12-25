@@ -587,6 +587,43 @@ $purple: #8f47ba
           width: 100%
 
   .map
-    height: 70vh
+    height: 85vh
     width: 100%
     background: $purple
+
+  .contactform
+    position: relative
+    .form
+      position: absolute
+      padding: 20px 40px
+      margin-left: 130px
+      top: 100%
+      width: 400px
+      height: 85vh
+      transform: translateY(-100%)
+      background: rgba(143, 71, 186, 0.6)
+      color: white
+      .contact
+        text-align: center
+
+      form
+        display: flex
+        flex-direction: column
+        label
+          font-weight: 400
+        input, textarea
+          padding: 6px
+          background: transparent
+          border-top: none
+          border-left: none
+          border-right: none
+          border-bottom: 2px solid white
+          outline: none
+        button
+          width: 150px
+          background: white
+          padding: 10px 10px
+          border: white
+          border-radius: 20px
+          color: $purple
+          margin: 0 auto
