@@ -747,7 +747,7 @@ body {
 }
 
 #spangler {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -1577,6 +1577,11 @@ body {
   outline: none;
 }
 
+#spangler .contactform .form form textarea {
+  resize: vertical;
+  max-height: 60px;
+}
+
 #spangler .contactform .form form button {
   width: 150px;
   background: white;
@@ -1585,6 +1590,39 @@ body {
   border-radius: 20px;
   color: #8f47ba;
   margin: 0 auto;
+}
+
+#spangler .aboutcontact {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 100px 100px;
+  color: white;
+}
+
+#spangler .aboutcontact .about {
+  width: 40%;
+}
+
+#spangler .aboutcontact .about h4, #spangler .aboutcontact .about p {
+  font-size: 0.8rem;
+}
+
+#spangler .aboutcontact .about h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+#spangler .aboutcontact .logo {
+  width: 15%;
+}
+
+#spangler .aboutcontact .logo img {
+  width: 100%;
+}
+
+#spangler .aboutcontact .subscribe {
+  width: 40%;
 }
 
 @media screen and (max-width: 700px) {

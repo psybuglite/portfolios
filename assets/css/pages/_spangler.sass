@@ -4,8 +4,9 @@ $purple: #8f47ba
   color: orange
 
 
+
 #spangler
-  height: 100vh
+  min-height: 100vh
   position: relative
   .searcharea
     height: 6vh
@@ -619,6 +620,9 @@ $purple: #8f47ba
           border-right: none
           border-bottom: 2px solid white
           outline: none
+        textarea
+          resize: vertical
+          max-height: 60px
         button
           width: 150px
           background: white
@@ -627,3 +631,24 @@ $purple: #8f47ba
           border-radius: 20px
           color: $purple
           margin: 0 auto
+
+  .aboutcontact
+    display: flex
+    justify-content: space-between
+    background: rgba(0, 0, 0, 0.9)
+    padding: 100px 100px
+    color: white
+    .about
+      width: 40%
+      h4, p
+        font-size: 0.8rem
+      h3
+        font-size: 0.8rem
+        text-transform: uppercase
+        
+    .logo
+      width: 15%
+      img
+        width: 100%
+    .subscribe
+      width: 40%
