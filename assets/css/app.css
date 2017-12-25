@@ -1481,18 +1481,61 @@ body {
 }
 
 #spangler .blogclips .blogspace .blogbig .blogbottom span {
-  font-size: 1.5rem;
   color: #8f47ba;
   font-weight: 500;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogbottom button {
+  margin-top: 20px;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogbottom h1 {
+  font-size: 1.5rem;
 }
 
 #spangler .blogclips .blogspace .blogbig .blogtop {
   height: 50%;
   margin: 0px 0px 5px 0px;
-  display: flex;
-  justify-content: space-between;
   background: lightgreen;
   padding: 20px;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogtop span {
+  color: #8f47ba;
+  font-weight: 500;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogtop button {
+  margin-top: 20px;
+}
+
+#spangler .blogclips .blogspace .blogbig .blogtop h1 {
+  font-size: 1.5rem;
+}
+
+#spangler .affiliates {
+  padding: 50px 0px;
+}
+
+#spangler .affiliates .affcontain {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#spangler .affiliates .affcontain .aff {
+  width: 15%;
+}
+
+#spangler .affiliates .affcontain .aff img {
+  width: 100%;
+}
+
+#spangler .map {
+  height: 70vh;
+  width: 100%;
+  background: #8f47ba;
 }
 
 @media screen and (max-width: 700px) {

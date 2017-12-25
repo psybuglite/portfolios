@@ -9,6 +9,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
     <link rel="stylesheet" href="../css/app.css">
 
     <title>
@@ -452,8 +454,8 @@
             </div>
         </section>
 
-        <!-- end of the hotandnew -->
-        <!-- Start of the pastrychefs -->
+        <!-- end of the pastrychefs -->
+        <!-- Start of the blogclips -->
 
         <section class="blogclips">
             <div class="swtcks">
@@ -477,24 +479,60 @@
                 </div>
                 <div class="blogbig">
                     <div class="blogtop">
-                        <div class="blogtopright">
-                            <p>SALE <span>20%</span></p>
-                            <h4>today</h4>
-                            <button>Buy Now</button>
+                        <p>by <span class="author">Cathy</span> / January 3rd 2018</p>
+                        <div class="blogdetails">
+                            <h1>Sweet Confections by Cathy</h1>
+                            <p>lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
+                            <button>Read More</button>
                         </div>
                     </div>
                     <div class="blogbottom">
-                        <p>SALE <span>20%</span></p>
-                        <h4>ALL LOLLIPOPS</h4>
+                        <p>by <span class="author">Cathy</span> / January 3rd 2018</p>
+                        <div class="blogdetails">
+                            <h1>Sweet Confections by Cathy</h1>
+                            <p>lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur</p>
+                            <button>Read More</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- end of the blogclips -->
+        <!-- Start of the affiliatess -->
+
+        <section class="affiliates">
+            <div class="affcontain">
+                <div class="aff"><img src="../img/forefront.png" alt="Rudigo.jpg"></div>
+                <div class="aff"><img src="../img/mabiri.png" alt="Rudigo.jpg"></div>
+                <div class="aff"><img src="../img/rudigo.png" alt="Rudigo.jpg"></div>
+                <div class="aff"><img src="../img/shabtech.jpg" alt="Rudigo.jpg"></div>
+                <div class="aff"><img src="../img/triplesoft.jpg" alt="Rudigo.jpg"></div>
+            </div>
+        </section>
+
+        <!-- end of the affiliates -->
+        <!-- Start of the map -->
+
+        <section class="map" id="map">
+        </section>
+
+
     </section>
 
-    <!-- script files and content goes here -->
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(4.774723, 7.013218),
+                zoom: 16
+            };
+            var mape = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
 
+    <!-- script files and content goes here -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Byawj4jJ91tK4Z1etMPYkGRo5cZ_Z-I&callback=myMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
@@ -562,6 +600,7 @@
             }
         }, 1000);
     </script>
+
 </body>
 
 </html>
