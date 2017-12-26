@@ -1629,6 +1629,29 @@ body {
   font-size: 0.8rem;
 }
 
+#spangler .aboutcontact .subscribe input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #48245d;
+  width: 300px;
+  outline: none;
+}
+
+#spangler .aboutcontact .subscribe input::placeholder {
+  color: white;
+  font-weight: lighter;
+}
+
+#spangler .aboutcontact .subscribe button {
+  padding: 10px 30px;
+  background: #8f47ba;
+  border-radius: 20px;
+  border: none;
+  margin-left: -35px;
+  outline: none;
+}
+
 @media screen and (max-width: 700px) {
   #morrison .time .timeline::after {
     left: 31px;
