@@ -1633,13 +1633,13 @@ body {
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
-  background: #48245d;
-  width: 300px;
+  background: #391c4a;
+  width: 350px;
   outline: none;
 }
 
 #spangler .aboutcontact .subscribe input::placeholder {
-  color: white;
+  color: #999;
   font-weight: lighter;
 }
 
