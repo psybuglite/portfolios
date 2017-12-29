@@ -1175,13 +1175,20 @@ body {
   font-family: 'Della Respira', serif;
 }
 
+#spangler .weeklyoffer .offerspace .bigoffer {
+  background-image: url("../img/bigoffer.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #spangler .weeklyoffer .offerspace .offerbig {
-  background: #eee;
   width: 50%;
   margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 8px;
 }
 
 #spangler .weeklyoffer .offerspace .offerbig button {
@@ -1210,6 +1217,11 @@ body {
   margin: 5px 0px 0px 0px;
   height: 50%;
   padding: 100px 20px 20px 20px;
+  border-radius: 8px;
+  background-image: url("../img/lollipops.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #spangler .weeklyoffer .offerspace .offerbig .offerbottom span {
@@ -1231,6 +1243,11 @@ body {
   background: lightblue;
   padding: 10px;
   text-align: right;
+  border-radius: 8px;
+  background-image: url("../img/topleft.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright {
@@ -1238,6 +1255,11 @@ body {
   padding: 10px;
   margin: 0px 0px 0px 5px;
   background: lightgreen;
+  border-radius: 8px;
+  background-image: url("../img/topright.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright button {
@@ -1388,6 +1410,8 @@ body {
 #spangler .pastrychefs .chefs .chef {
   background-color: white;
   text-align: center;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #spangler .pastrychefs .chefs .chef img {
@@ -1437,6 +1461,7 @@ body {
   margin: 0 auto 50px auto;
   display: flex;
   justify-content: space-between;
+  color: white;
   font-family: 'Della Respira', serif;
 }
 
@@ -1450,11 +1475,11 @@ body {
 }
 
 #spangler .blogclips .blogspace .blogbig button {
-  background: #8f47ba;
+  background: white;
   padding: 10px 30px;
-  border: #8f47ba;
+  border: white;
   border-radius: 20px;
-  color: white;
+  color: #8f47ba;
 }
 
 #spangler .blogclips .blogspace .blogbig .bloglabel {
@@ -1466,7 +1491,7 @@ body {
 }
 
 #spangler .blogclips .blogspace .blogbig .bloglabel span {
-  color: #8f47ba;
+  color: orange;
   font-weight: 500;
 }
 
@@ -1487,7 +1512,7 @@ body {
 }
 
 #spangler .blogclips .blogspace .blogbig .blogbottom span {
-  color: #8f47ba;
+  color: orange;
   font-weight: 500;
 }
 
@@ -1507,7 +1532,7 @@ body {
 }
 
 #spangler .blogclips .blogspace .blogbig .blogtop span {
-  color: #8f47ba;
+  color: orange;
   font-weight: 500;
 }
 
