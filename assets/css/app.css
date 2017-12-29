@@ -1784,10 +1784,13 @@ body {
 }
 
 #spangler footer .footitems .socialconnect .playstore {
-  width: 60%;
+  width: 50%;
+  margin-top: 10px;
 }
 
 #spangler footer .footitems .socialconnect .playstore img {
+  border: 0.5px solid #cccccc;
+  border-radius: 10px;
   width: 100%;
 }
 
