@@ -543,8 +543,13 @@ $purple: #8f47ba
       justify-content: space-between
       color: white
       font-family: 'Della Respira', serif;
+      .bigblog
+        border-radius: 7px
+        background-image: url("../img/blogpic1.jpg")
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
       .blogbig
-        background: #eee
         width: 50%
         margin: 5px
         display: flex
@@ -572,13 +577,16 @@ $purple: #8f47ba
 
             button
               margin-top: 20px
-
           
         .blogbottom
-          background: pink
+          background-image: url("../img/blogpic3.jpg")
+          background-position: center center
+          background-repeat: no-repeat
+          background-size: cover
           margin: 5px 0px 0px 0px
           height: 50%
           padding: 20px
+          border-radius: 7px
           span
             color: orange
             font-weight: 500
@@ -587,10 +595,14 @@ $purple: #8f47ba
           h1
             font-size: 1.5rem
         .blogtop
+          background-image: url("../img/blogpic2.jpg")
+          background-position: center center
+          background-repeat: no-repeat
+          background-size: cover
           height: 50%
           margin: 0px 0px 5px 0px
-          background: lightgreen
           padding: 20px
+          border-radius: 7px
           span
             color: orange
             font-weight: 500
@@ -744,4 +756,22 @@ $purple: #8f47ba
               text-decoration: none
               color: black
 
+      .socialconnect
+        h4
+          margin-bottom: 30px
+        .sociallinks
+          a
+            margin-right: 15px
+            span
+              font-size: 1.2rem
+              border: 0.5px solid black
+              border-radius: 50%
+              padding: 10px 15px
+            .fa-twitter, .fa-instagram
+              padding: 10px 11px
+
+        .playstore
+          width: 60%
+          img
+            width: 100%
 
