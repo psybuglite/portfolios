@@ -1295,8 +1295,12 @@ body {
 }
 
 #spangler .hotandnew .hot .hotcake .hotcakepic, #spangler .hotandnew .new .hotcake .hotcakepic {
-  width: 35%;
+  width: 27%;
   background: lightblue;
+}
+
+#spangler .hotandnew .hot .hotcake .hotcakepic img, #spangler .hotandnew .new .hotcake .hotcakepic img {
+  width: 100%;
 }
 
 #spangler .hotandnew .hot .hotcake .hotcakedesc, #spangler .hotandnew .new .hotcake .hotcakedesc {
