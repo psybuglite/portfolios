@@ -1576,6 +1576,7 @@ body {
 
 #spangler .affiliates .affcontain .aff img {
   width: 100%;
+  filter: grayscale(80%);
 }
 
 #spangler .map {
