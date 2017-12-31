@@ -748,26 +748,37 @@ body {
   color: orange;
 }
 
-#spangler {
-  min-height: 100vh;
-  position: relative;
+button {
+  -webkit-box-shadow: 0px 6px 18px -4px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 6px 18px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 6px 18px -4px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s;
 }
 
-#spangler .searcharea {
-  height: 6vh;
+button:hover {
+  -webkit-box-shadow: 0px 9px 18px -4px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 9px 18px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 9px 18px -4px rgba(0, 0, 0, 0.35);
+}
+
+#kristam {
+  min-height: 100vh;
+}
+
+#kristam .searcharea {
   display: flex;
   justify-content: space-between;
-  padding: 5px 120px;
+  padding: 5px 80px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#spangler .searcharea .address p {
+#kristam .searcharea .address p {
   font-size: 0.8rem;
   margin-bottom: 0px;
   padding: 3px 0px;
 }
 
-#spangler .searcharea .searchbar input[type=search] {
+#kristam .searcharea .searchbar input[type=search] {
   border-right: transparent;
   border-top: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -777,23 +788,71 @@ body {
   font-size: 0.8rem;
 }
 
-#spangler .searcharea .searchbar i:hover {
+#kristam .searcharea .searchbar i:hover {
   cursor: pointer;
 }
 
-#spangler nav {
-  padding: 9px 120px;
-  height: 7vh;
+#kristam .krislogo {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  left: 40%;
+  z-index: 5000;
+  margin-top: 40px;
 }
 
-#spangler nav .topnav {
+#kristam .krislogo img {
+  width: 100%;
+}
+
+#kristam nav {
+  padding: 9px 50px;
+}
+
+#kristam nav .krispic {
+  display: none;
+  margin: 10px 60px;
+}
+
+#kristam nav .krispic img {
+  width: 60px;
+  top: 40px;
+  left: 50%;
+  z-index: 1000;
+}
+
+#kristam nav .navbar-toggle {
+  margin: 0;
+  padding: 2px;
+  font-size: 1.3rem;
+}
+
+#kristam nav .navbar-toggle .icon-bar {
+  color: #8f47ba;
+}
+
+#kristam nav .in {
+  padding: 0px;
+  margin: 0px;
+}
+
+#kristam nav .navs {
+  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
 }
 
-#spangler nav .topnav a {
-  color: purple;
+#kristam nav .navs .space {
+  width: 50px;
+}
+
+#kristam nav .navs .navlink {
+  margin: 10px 0px;
+}
+
+#kristam nav .navs a {
+  color: #8f47ba;
   text-align: center;
   padding: 3px 20px;
   text-decoration: none;
@@ -803,36 +862,18 @@ body {
   border-radius: 30px;
 }
 
-#spangler nav .topnav a:hover {
+#kristam nav .navs a:hover {
   color: white;
   background: #8f47ba;
 }
 
-#spangler nav .topnav .krispic {
-  margin: 0px 60px;
-}
-
-#spangler nav .topnav .krispic img {
-  position: absolute;
-  width: 200px;
-  top: 40px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 1000;
-}
-
-#spangler nav .active {
+#kristam nav .active {
   color: white;
-  border: 2px solid purple;
+  border: 2px solid #8f47ba;
   border-radius: 30px;
 }
 
-#spangler nav .topnav .icon {
-  display: none;
-}
-
-#spangler .hero {
+#kristam .hero {
   height: 77vh;
   background-image: url("../img/cupcakehero.jpg");
   background-size: cover;
@@ -840,25 +881,26 @@ body {
   background-repeat: no-repeat;
   position: relative;
   font-family: 'Quintessential', cursive;
+  z-index: 1000;
 }
 
-#spangler .hero .wave {
+#kristam .hero .wave {
   transform: rotate(180deg);
   position: relative;
 }
 
-#spangler .hero .waved {
+#kristam .hero .waved {
   width: 100%;
   position: absolute;
   bottom: 0;
   z-index: 2000;
 }
 
-#spangler .hero .wave, #spangler .hero .wavedown {
+#kristam .hero .wave, #kristam .hero .wavedown {
   height: 50px;
 }
 
-#spangler .hero .wave::before, #spangler .hero .wavedown::before {
+#kristam .hero .wave::before, #kristam .hero .wavedown::before {
   content: "";
   position: absolute;
   left: 0;
@@ -870,7 +912,7 @@ body {
   background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
 }
 
-#spangler .hero .wave::after, #spangler .hero .wavedown::after {
+#kristam .hero .wave::after, #kristam .hero .wavedown::after {
   content: "";
   position: absolute;
   left: 0;
@@ -882,24 +924,24 @@ body {
   background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
 }
 
-#spangler .hero .textcontent {
+#kristam .hero .textcontent {
   max-width: 500px;
   margin: 18vh auto;
   color: white;
   text-align: center;
 }
 
-#spangler .hero .textcontent h1 {
+#kristam .hero .textcontent h1 {
   font-size: 2.9rem;
   font-family: 'Quintessential', cursive;
 }
 
-#spangler .hero .textcontent p {
+#kristam .hero .textcontent p {
   margin: 30px 0px;
   font-family: 'Quintessential', cursive;
 }
 
-#spangler .hero .textcontent button {
+#kristam .hero .textcontent button {
   background: #8f47ba;
   padding: 10px 25px;
   border-radius: 20px;
@@ -908,20 +950,21 @@ body {
   color: white;
 }
 
-#spangler .promo {
+#kristam .promo {
   display: flex;
   padding: 80px 100px 40px 100px;
+  border-bottom: 0.3px solid #f1f1f1;
 }
 
-#spangler .promo .promopic {
+#kristam .promo .promopic {
   width: 40%;
 }
 
-#spangler .promo .promopic img {
+#kristam .promo .promopic img {
   width: 100%;
 }
 
-#spangler .promo .timer {
+#kristam .promo .timer {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -930,39 +973,39 @@ body {
   text-align: center;
 }
 
-#spangler .promo .timer h4 {
+#kristam .promo .timer h4 {
   font-size: 1.8rem;
   font-family: 'Niconne', cursive;
 }
 
-#spangler .promo .timer h3 {
+#kristam .promo .timer h3 {
   font-size: 2rem;
   font-family: 'Della Respira', serif;
 }
 
-#spangler .promo .timer h2 {
+#kristam .promo .timer h2 {
   font-size: 1.5rem;
 }
 
-#spangler .promo .timer .time {
+#kristam .promo .timer .time {
   font-size: 3.5rem;
   font-family: 'Della Respira', serif;
 }
 
-#spangler .promo .timer .time span {
+#kristam .promo .timer .time span {
   padding-right: 10px;
   font-family: 'Prata', serif;
 }
 
-#spangler .promo .timer .times {
+#kristam .promo .timer .times {
   font-size: 1.1rem;
 }
 
-#spangler .promo .timer .times span {
+#kristam .promo .timer .times span {
   padding: 15px;
 }
 
-#spangler .promo .timer button {
+#kristam .promo .timer button {
   width: 150px;
   margin: 60px auto;
   background: #8f47ba;
@@ -973,67 +1016,67 @@ body {
   outline: none;
 }
 
-#spangler .offers {
+#kristam .offers {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 50px 0px 100px 0px;
+  padding: 50px 50px 100px 50px;
 }
 
-#spangler .offers .swtcks {
+#kristam .offers .swtcks {
   display: flex;
   justify-content: center;
   margin: 20px 0px 70px 0px;
 }
 
-#spangler .offers .swtcks .bar {
+#kristam .offers .swtcks .bar {
   height: 72px;
   width: 120px;
   border-bottom: 20px solid #f1f1f1;
 }
 
-#spangler .offers .swtcks .title {
+#kristam .offers .swtcks .title {
   text-align: center;
   margin: 0 20px;
 }
 
-#spangler .offers .swtcks .title h1 {
+#kristam .offers .swtcks .title h1 {
   font-size: 2rem;
   margin: 0;
   font-family: 'Quintessential', cursive;
 }
 
-#spangler .offers .swtcks .title p {
+#kristam .offers .swtcks .title p {
   font-family: 'Niconne', cursive;
   font-size: 1.5rem;
 }
 
-#spangler .offers .offerlist {
+#kristam .offers .offerlist {
   display: flex;
   justify-content: space-between;
 }
 
-#spangler .offers .offerlist .offer {
+#kristam .offers .offerlist .offer {
   width: 20%;
   text-align: center;
   position: relative;
 }
 
-#spangler .offers .offerlist .offer img {
+#kristam .offers .offerlist .offer img {
   width: 100%;
   margin-bottom: 20px;
 }
 
-#spangler .offers .offerlist .offer h4 {
+#kristam .offers .offerlist .offer h4 {
   font-size: 0.9rem;
   margin: 0;
 }
 
-#spangler .offers .offerlist .offer h5 {
+#kristam .offers .offerlist .offer h5 {
   font-size: 0.8rem;
   margin: 3px;
 }
 
-#spangler .offers .offerlist .offer .tag, #spangler .offers .offerlist .offer .tag2 {
+#kristam .offers .offerlist .offer .tag, #kristam .offers .offerlist .offer .tag2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1042,11 +1085,11 @@ body {
   border: 10px dotted #8f47ba;
 }
 
-#spangler .offers .offerlist .offer .tag2 {
+#kristam .offers .offerlist .offer .tag2 {
   transform: rotate(-28deg);
 }
 
-#spangler .offers .offerlist .offer .perc {
+#kristam .offers .offerlist .offer .perc {
   position: absolute;
   top: 1.5%;
   left: 1.5%;
@@ -1055,14 +1098,14 @@ body {
   padding: 10px 6px;
 }
 
-#spangler .offers .offerlist .offer .perc p {
+#kristam .offers .offerlist .offer .perc p {
   font-size: 0.8rem;
   color: white;
   transform: rotate(-20deg);
   margin: 0;
 }
 
-#spangler .offers .offerlist .offer .tag3, #spangler .offers .offerlist .offer .tag4 {
+#kristam .offers .offerlist .offer .tag3, #kristam .offers .offerlist .offer .tag4 {
   position: absolute;
   top: 0;
   right: 0;
@@ -1071,11 +1114,11 @@ body {
   border: 10px dotted #8f47ba;
 }
 
-#spangler .offers .offerlist .offer .tag4 {
+#kristam .offers .offerlist .offer .tag4 {
   transform: rotate(-28deg);
 }
 
-#spangler .offers .offerlist .offer .percs {
+#kristam .offers .offerlist .offer .percs {
   position: absolute;
   top: 1.5%;
   right: 1.5%;
@@ -1084,90 +1127,94 @@ body {
   padding: 10px 8px;
 }
 
-#spangler .offers .offerlist .offer .percs p {
+#kristam .offers .offerlist .offer .percs p {
   font-size: 0.8rem;
   color: white;
   transform: rotate(-20deg);
   margin: 0;
 }
 
-#spangler .toprating {
+#kristam .toprating {
   background: #f1f1f1;
-  padding: 30px 0px;
+  padding: 0px 10px 30px 10px;
 }
 
-#spangler .toprating .contain {
+#kristam .toprating .contain {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-#spangler .toprating .contain .carousel {
-  padding: 50px 0px 100px 0px;
+#kristam .toprating .contain .carousel {
+  padding: 30px 0px 80px 0px;
 }
 
-#spangler .toprating .contain .carousel li {
+#kristam .toprating .contain .carousel li {
   transition: all 0.5s;
   background-color: #8f47ba;
   padding: 7px;
 }
 
-#spangler .toprating .contain .carousel li.active {
+#kristam .toprating .contain .carousel li.active {
   padding-left: 30px;
   padding-right: 30px;
   transition: all 0.5s;
   color: purple;
 }
 
-#spangler .toprating .contain .carousel .item {
+#kristam .toprating .contain .carousel .item {
   text-align: center;
 }
 
-#spangler .toprating .contain .carousel .item .criticpic {
+#kristam .toprating .contain .carousel .item .criticpic {
   width: 100px;
   margin: 0 auto;
   border: 5px solid white;
   border-radius: 50%;
 }
 
-#spangler .toprating .contain .carousel .item .criticpic img {
+#kristam .toprating .contain .carousel .item .criticpic img {
   width: 100%;
   border-radius: 50%;
 }
 
-#spangler .toprating .contain .carousel .item p {
+#kristam .toprating .contain .carousel .item p {
   font-size: 1rem;
 }
 
-#spangler .weeklyoffer .swtcks {
+#kristam .weeklyoffer {
+  padding: 0px 10px;
+}
+
+#kristam .weeklyoffer .swtcks {
   display: flex;
   justify-content: center;
   margin: 50px 0px 70px 0px;
 }
 
-#spangler .weeklyoffer .swtcks .bar {
+#kristam .weeklyoffer .swtcks .bar {
   height: 72px;
   width: 120px;
   border-bottom: 20px solid #f1f1f1;
 }
 
-#spangler .weeklyoffer .swtcks .title {
+#kristam .weeklyoffer .swtcks .title {
   text-align: center;
   margin: 0 20px;
 }
 
-#spangler .weeklyoffer .swtcks .title h1 {
+#kristam .weeklyoffer .swtcks .title h1 {
   font-size: 2rem;
   margin: 0;
   font-family: 'Quintessential', cursive;
 }
 
-#spangler .weeklyoffer .swtcks .title p {
+#kristam .weeklyoffer .swtcks .title p {
   font-family: 'Niconne', cursive;
   font-size: 1.5rem;
 }
 
-#spangler .weeklyoffer .offerspace {
-  height: 70vh;
+#kristam .weeklyoffer .offerspace {
+  height: auto;
   max-width: 1200px;
   margin: 0 auto 50px auto;
   display: flex;
@@ -1175,14 +1222,14 @@ body {
   font-family: 'Della Respira', serif;
 }
 
-#spangler .weeklyoffer .offerspace .bigoffer {
+#kristam .weeklyoffer .offerspace .bigoffer {
   background-image: url("../img/bigoffer.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig {
+#kristam .weeklyoffer .offerspace .offerbig {
   width: 50%;
   margin: 5px;
   display: flex;
@@ -1191,7 +1238,7 @@ body {
   border-radius: 8px;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig button {
+#kristam .weeklyoffer .offerspace .offerbig button {
   background: #8f47ba;
   padding: 10px 30px;
   border: #8f47ba;
@@ -1199,23 +1246,23 @@ body {
   color: white;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offerlabel {
+#kristam .weeklyoffer .offerspace .offerbig .offerlabel {
   padding: 30px;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offerlabel h1 {
+#kristam .weeklyoffer .offerspace .offerbig .offerlabel h1 {
   font-family: 'Della Respira', serif;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offerlabel span {
+#kristam .weeklyoffer .offerspace .offerbig .offerlabel span {
   color: #8f47ba;
   font-weight: 500;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offerbottom {
+#kristam .weeklyoffer .offerspace .offerbig .offerbottom {
   background: pink;
   margin: 5px 0px 0px 0px;
-  height: 50%;
+  height: 200px;
   padding: 100px 20px 20px 20px;
   border-radius: 8px;
   background-image: url("../img/lollipops.jpg");
@@ -1224,20 +1271,20 @@ body {
   background-size: cover;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offerbottom span {
+#kristam .weeklyoffer .offerspace .offerbig .offerbottom span {
   font-size: 1.5rem;
   color: #8f47ba;
   font-weight: 500;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offertop {
-  height: 50%;
+#kristam .weeklyoffer .offerspace .offerbig .offertop {
+  height: 200px;
   margin: 0px 0px 5px 0px;
   display: flex;
   justify-content: space-between;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
   width: 50%;
   margin: 0px 5px 0px 0px;
   background: lightblue;
@@ -1250,7 +1297,7 @@ body {
   background-size: cover;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright {
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright {
   width: 50%;
   padding: 10px;
   margin: 0px 0px 0px 5px;
@@ -1262,85 +1309,88 @@ body {
   background-size: cover;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright button {
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright button {
   padding: 5px 15px;
   font-size: 0.7rem;
 }
 
-#spangler .weeklyoffer .offerspace .offerbig .offertop .offertopright span {
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright span {
   font-size: 1.5rem;
   color: #8f47ba;
   font-weight: 500;
 }
 
-#spangler .hotandnew {
+#kristam .hotandnew {
   max-width: 1200px;
-  margin: 0 auto 50px auto;
+  margin: 0px auto 50px auto;
+  padding: 0px 10px;
+}
+
+#kristam .hotandnew .hotnew {
   display: flex;
   justify-content: space-between;
 }
 
-#spangler .hotandnew .swtcks {
+#kristam .hotandnew .hotnew .swtcks {
   display: flex;
   margin: 50px 0px 70px 0px;
 }
 
-#spangler .hotandnew .swtcks .bar {
+#kristam .hotandnew .hotnew .swtcks .bar {
   height: 29px;
   width: 120px;
   border-bottom: 20px solid #f1f1f1;
 }
 
-#spangler .hotandnew .swtcks .title {
+#kristam .hotandnew .hotnew .swtcks .title {
   text-align: center;
   margin: 0 20px 0 0;
 }
 
-#spangler .hotandnew .swtcks .title h1 {
+#kristam .hotandnew .hotnew .swtcks .title h1 {
   font-size: 2rem;
   margin: 0;
   font-family: 'Quintessential', cursive;
 }
 
-#spangler .hotandnew .swtcks .title p {
+#kristam .hotandnew .hotnew .swtcks .title p {
   font-family: 'Niconne', cursive;
   font-size: 1.5rem;
 }
 
-#spangler .hotandnew .hot, #spangler .hotandnew .new {
+#kristam .hotandnew .hotnew .hot, #kristam .hotandnew .hotnew .new {
   width: 50%;
 }
 
-#spangler .hotandnew .hot .hotcake, #spangler .hotandnew .new .hotcake {
+#kristam .hotandnew .hotnew .hot .hotcake, #kristam .hotandnew .hotnew .new .hotcake {
   display: flex;
   margin: 10px;
 }
 
-#spangler .hotandnew .hot .hotcake .hotcakepic, #spangler .hotandnew .new .hotcake .hotcakepic {
-  width: 27%;
-  background: lightblue;
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakepic, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic {
+  width: 30%;
 }
 
-#spangler .hotandnew .hot .hotcake .hotcakepic img, #spangler .hotandnew .new .hotcake .hotcakepic img {
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakepic img, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic img {
   width: 100%;
 }
 
-#spangler .hotandnew .hot .hotcake .hotcakedesc, #spangler .hotandnew .new .hotcake .hotcakedesc {
-  width: 65%;
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc {
+  width: 70%;
   padding: 5px;
 }
 
-#spangler .hotandnew .hot .hotcake .hotcakedesc h3, #spangler .hotandnew .new .hotcake .hotcakedesc h3 {
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc h3, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc h3 {
   font-size: 0.9rem;
   margin: 0px;
 }
 
-#spangler .hotandnew .hot .hotcake .hotcakedesc p, #spangler .hotandnew .new .hotcake .hotcakedesc p {
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc p, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc p {
   font-size: 0.8rem;
   margin: 10px 0px;
 }
 
-#spangler .hotandnew .hot .hotcake .hotcakedesc button, #spangler .hotandnew .new .hotcake .hotcakedesc button {
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc button, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc button {
   background: #8f47ba;
   padding: 5px 15px;
   border: #8f47ba;
@@ -1350,50 +1400,50 @@ body {
   margin: 10px 0px;
 }
 
-#spangler .pastrychefs {
+#kristam .pastrychefs {
   background: #f1f1f1;
   padding: 50px 20px;
 }
 
-#spangler .pastrychefs .chefs {
+#kristam .pastrychefs .chefs {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
-#spangler .pastrychefs .chefs .aboutchefs {
+#kristam .pastrychefs .chefs .aboutchefs {
   width: 35%;
 }
 
-#spangler .pastrychefs .chefs .aboutchefs .swtcks {
+#kristam .pastrychefs .chefs .aboutchefs .swtcks {
   display: flex;
   margin: 50px 0px 70px 0px;
 }
 
-#spangler .pastrychefs .chefs .aboutchefs .swtcks .bar {
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .bar {
   height: 29px;
   width: 120px;
   border-bottom: 20px solid #f1f1f1;
 }
 
-#spangler .pastrychefs .chefs .aboutchefs .swtcks .title {
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .title {
   text-align: center;
   margin: 0 20px 0 0;
 }
 
-#spangler .pastrychefs .chefs .aboutchefs .swtcks .title h1 {
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .title h1 {
   font-size: 2rem;
   margin: 0;
   font-family: 'Quintessential', cursive;
 }
 
-#spangler .pastrychefs .chefs .aboutchefs .swtcks .title p {
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .title p {
   font-family: 'Niconne', cursive;
   font-size: 1.5rem;
 }
 
-#spangler .pastrychefs .chefs .aboutchefs button {
+#kristam .pastrychefs .chefs .aboutchefs button {
   background: #8f47ba;
   padding: 5px 15px;
   border: #8f47ba;
@@ -1403,69 +1453,75 @@ body {
   margin: 10px 0px;
 }
 
-#spangler .pastrychefs .chefs .chef {
-  width: 18%;
+#kristam .pastrychefs .chefs .chefcards {
+  display: flex;
+  justify-content: space-around;
 }
 
-#spangler .pastrychefs .chefs .chef {
+#kristam .pastrychefs .chefs .chefcards .chef {
+  width: 30%;
   background-color: white;
   text-align: center;
   border-radius: 5px;
   padding: 5px;
 }
 
-#spangler .pastrychefs .chefs .chef img {
+#kristam .pastrychefs .chefs .chefcards .chef img {
   width: 100%;
 }
 
-#spangler .pastrychefs .chefs .chef .aboutchef {
+#kristam .pastrychefs .chefs .chefcards .chef .aboutchef {
   padding: 10px;
 }
 
-#spangler .pastrychefs .chefs .chef .aboutchef span {
+#kristam .pastrychefs .chefs .chefcards .chef .aboutchef span {
   margin: 10px;
   font-size: 1.2rem;
 }
 
-#spangler .blogclips .swtcks {
+#kristam .blogclips {
+  padding: 0px 10px;
+}
+
+#kristam .blogclips .swtcks {
   display: flex;
   justify-content: center;
   margin: 50px 0px 70px 0px;
 }
 
-#spangler .blogclips .swtcks .bar {
+#kristam .blogclips .swtcks .bar {
   height: 72px;
   width: 120px;
   border-bottom: 20px solid #f1f1f1;
 }
 
-#spangler .blogclips .swtcks .title {
+#kristam .blogclips .swtcks .title {
   text-align: center;
   margin: 0 20px;
 }
 
-#spangler .blogclips .swtcks .title h1 {
+#kristam .blogclips .swtcks .title h1 {
   font-size: 2rem;
   margin: 0;
   font-family: 'Quintessential', cursive;
 }
 
-#spangler .blogclips .swtcks .title p {
+#kristam .blogclips .swtcks .title p {
   font-family: 'Niconne', cursive;
   font-size: 1.5rem;
 }
 
-#spangler .blogclips .blogspace {
-  height: 70vh;
+#kristam .blogclips .blogspace {
+  height: auto;
   max-width: 1200px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 20px auto;
   display: flex;
   justify-content: space-between;
   color: white;
   font-family: 'Della Respira', serif;
 }
 
-#spangler .blogclips .blogspace .bigblog {
+#kristam .blogclips .blogspace .bigblog {
   border-radius: 7px;
   background-image: url("../img/blogpic1.jpg");
   background-position: center center;
@@ -1473,7 +1529,7 @@ body {
   background-size: cover;
 }
 
-#spangler .blogclips .blogspace .blogbig {
+#kristam .blogclips .blogspace .blogbig {
   width: 50%;
   margin: 5px;
   display: flex;
@@ -1481,7 +1537,7 @@ body {
   justify-content: space-between;
 }
 
-#spangler .blogclips .blogspace .blogbig button {
+#kristam .blogclips .blogspace .blogbig button {
   background: white;
   padding: 10px 30px;
   border: white;
@@ -1489,107 +1545,106 @@ body {
   color: #8f47ba;
 }
 
-#spangler .blogclips .blogspace .blogbig .bloglabel {
+#kristam .blogclips .blogspace .blogbig .bloglabel {
   padding: 30px;
 }
 
-#spangler .blogclips .blogspace .blogbig .bloglabel h1 {
+#kristam .blogclips .blogspace .blogbig .bloglabel h1 {
   font-family: 'Della Respira', serif;
 }
 
-#spangler .blogclips .blogspace .blogbig .bloglabel span {
+#kristam .blogclips .blogspace .blogbig .bloglabel span {
   color: orange;
   font-weight: 500;
 }
 
-#spangler .blogclips .blogspace .blogbig .bloglabel .blogdetails {
+#kristam .blogclips .blogspace .blogbig .bloglabel .blogdetails {
   margin-top: 70px;
   max-width: 300px;
 }
 
-#spangler .blogclips .blogspace .blogbig .bloglabel .blogdetails button {
+#kristam .blogclips .blogspace .blogbig .bloglabel .blogdetails button {
   margin-top: 20px;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogbottom {
+#kristam .blogclips .blogspace .blogbig .blogbottom {
   background-image: url("../img/blogpic3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 5px 0px 0px 0px;
-  height: 50%;
+  height: 200px;
   padding: 20px;
   border-radius: 7px;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogbottom span {
+#kristam .blogclips .blogspace .blogbig .blogbottom span {
   color: orange;
   font-weight: 500;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogbottom button {
+#kristam .blogclips .blogspace .blogbig .blogbottom button {
   margin-top: 20px;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogbottom h1 {
+#kristam .blogclips .blogspace .blogbig .blogbottom h1 {
   font-size: 1.5rem;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogtop {
+#kristam .blogclips .blogspace .blogbig .blogtop {
   background-image: url("../img/blogpic2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50%;
+  height: 200px;
   margin: 0px 0px 5px 0px;
   padding: 20px;
   border-radius: 7px;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogtop span {
+#kristam .blogclips .blogspace .blogbig .blogtop span {
   color: orange;
   font-weight: 500;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogtop button {
+#kristam .blogclips .blogspace .blogbig .blogtop button {
   margin-top: 20px;
 }
 
-#spangler .blogclips .blogspace .blogbig .blogtop h1 {
+#kristam .blogclips .blogspace .blogbig .blogtop h1 {
   font-size: 1.5rem;
 }
 
-#spangler .affiliates {
-  padding: 50px 0px;
+#kristam .affiliates {
+  padding: 50px 10px;
 }
 
-#spangler .affiliates .affcontain {
+#kristam .affiliates .affcontain {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-#spangler .affiliates .affcontain .aff {
+#kristam .affiliates .affcontain .aff {
   width: 15%;
 }
 
-#spangler .affiliates .affcontain .aff img {
+#kristam .affiliates .affcontain .aff img {
   width: 100%;
-  filter: grayscale(80%);
 }
 
-#spangler .map {
+#kristam .map {
   height: 85vh;
   width: 100%;
   background: #8f47ba;
 }
 
-#spangler .contactform {
+#kristam .contactform {
   position: relative;
 }
 
-#spangler .contactform .form {
+#kristam .contactform .form {
   position: absolute;
   padding: 20px 40px;
   margin-left: 130px;
@@ -1601,20 +1656,20 @@ body {
   color: white;
 }
 
-#spangler .contactform .form .contact {
+#kristam .contactform .form .contact {
   text-align: center;
 }
 
-#spangler .contactform .form form {
+#kristam .contactform .form form {
   display: flex;
   flex-direction: column;
 }
 
-#spangler .contactform .form form label {
+#kristam .contactform .form form label {
   font-weight: 400;
 }
 
-#spangler .contactform .form form input, #spangler .contactform .form form textarea {
+#kristam .contactform .form form input, #kristam .contactform .form form textarea {
   padding: 6px;
   background: transparent;
   border-top: none;
@@ -1624,12 +1679,12 @@ body {
   outline: none;
 }
 
-#spangler .contactform .form form textarea {
+#kristam .contactform .form form textarea {
   resize: vertical;
   max-height: 60px;
 }
 
-#spangler .contactform .form form button {
+#kristam .contactform .form form button {
   width: 150px;
   background: white;
   padding: 10px 10px;
@@ -1639,7 +1694,7 @@ body {
   margin: 0 auto;
 }
 
-#spangler .aboutcontact {
+#kristam .aboutcontact {
   display: flex;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.9);
@@ -1647,45 +1702,45 @@ body {
   color: white;
 }
 
-#spangler .aboutcontact .about {
+#kristam .aboutcontact .about {
   width: 40%;
 }
 
-#spangler .aboutcontact .about h4, #spangler .aboutcontact .about p {
+#kristam .aboutcontact .about h4, #kristam .aboutcontact .about p {
   font-size: 0.8rem;
 }
 
-#spangler .aboutcontact .about p {
+#kristam .aboutcontact .about p {
   font-weight: 200;
 }
 
-#spangler .aboutcontact .about h3 {
+#kristam .aboutcontact .about h3 {
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 200;
 }
 
-#spangler .aboutcontact .logo {
+#kristam .aboutcontact .logo {
   width: 15%;
 }
 
-#spangler .aboutcontact .logo img {
+#kristam .aboutcontact .logo img {
   width: 100%;
 }
 
-#spangler .aboutcontact .subscribe {
+#kristam .aboutcontact .subscribe {
   width: 40%;
 }
 
-#spangler .aboutcontact .subscribe h4, #spangler .aboutcontact .subscribe p {
+#kristam .aboutcontact .subscribe h4, #kristam .aboutcontact .subscribe p {
   font-size: 0.8rem;
 }
 
-#spangler .aboutcontact .subscribe p {
+#kristam .aboutcontact .subscribe p {
   font-weight: 200;
 }
 
-#spangler .aboutcontact .subscribe input {
+#kristam .aboutcontact .subscribe input {
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
@@ -1694,12 +1749,12 @@ body {
   outline: none;
 }
 
-#spangler .aboutcontact .subscribe input::placeholder {
+#kristam .aboutcontact .subscribe input::placeholder {
   color: #999;
   font-weight: lighter;
 }
 
-#spangler .aboutcontact .subscribe button {
+#kristam .aboutcontact .subscribe button {
   padding: 10px 30px;
   background: #8f47ba;
   border-radius: 20px;
@@ -1708,27 +1763,27 @@ body {
   outline: none;
 }
 
-#spangler footer {
-  padding: 70px 0px;
+#kristam footer {
+  padding: 50px 10px;
 }
 
-#spangler footer .footitems {
+#kristam footer .footitems {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
-#spangler footer .footitems .payment, #spangler footer .footitems .officetime, #spangler footer .footitems .return, #spangler footer .footitems .socialconnect {
+#kristam footer .footitems .payment, #kristam footer .footitems .officetime, #kristam footer .footitems .return, #kristam footer .footitems .socialconnect {
   width: 22%;
 }
 
-#spangler footer .footitems .payment .cards {
+#kristam footer .footitems .payment .cards {
   display: flex;
   margin-top: 30px;
 }
 
-#spangler footer .footitems .payment .cards .card {
+#kristam footer .footitems .payment .cards .card {
   width: 40%;
   padding: 10px 20px;
   border: 1px solid #ccc;
@@ -1736,63 +1791,161 @@ body {
   border-radius: 5px;
 }
 
-#spangler footer .footitems .payment .cards .card img {
+#kristam footer .footitems .payment .cards .card img {
   width: 100%;
 }
 
-#spangler footer .footitems .officetime h4 {
+#kristam footer .footitems .officetime h4 {
   margin-bottom: 30px;
 }
 
-#spangler footer .footitems .return {
+#kristam footer .footitems .return {
   display: block;
 }
 
-#spangler footer .footitems .return h4 {
+#kristam footer .footitems .return h4 {
   margin-bottom: 30px;
 }
 
-#spangler footer .footitems .return ul {
+#kristam footer .footitems .return ul {
   list-style: none;
 }
 
-#spangler footer .footitems .return ul li {
+#kristam footer .footitems .return ul li {
   padding-bottom: 6px;
 }
 
-#spangler footer .footitems .return ul li a {
+#kristam footer .footitems .return ul li a {
   text-decoration: none;
   color: black;
 }
 
-#spangler footer .footitems .socialconnect h4 {
+#kristam footer .footitems .socialconnect h4 {
   margin-bottom: 30px;
 }
 
-#spangler footer .footitems .socialconnect .sociallinks a {
+#kristam footer .footitems .socialconnect .sociallinks a {
   margin-right: 15px;
 }
 
-#spangler footer .footitems .socialconnect .sociallinks a span {
+#kristam footer .footitems .socialconnect .sociallinks a span {
   font-size: 1.2rem;
-  border: 0.5px solid black;
   border-radius: 50%;
-  padding: 10px 15px;
+  padding: 8px 12px;
+  color: white;
 }
 
-#spangler footer .footitems .socialconnect .sociallinks a .fa-twitter, #spangler footer .footitems .socialconnect .sociallinks a .fa-instagram {
-  padding: 10px 11px;
+#kristam footer .footitems .socialconnect .sociallinks a .fa-twitter {
+  padding: 8px 9px;
+  background: #00aced;
 }
 
-#spangler footer .footitems .socialconnect .playstore {
+#kristam footer .footitems .socialconnect .sociallinks a .fa-instagram {
+  padding: 8px 10px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+#kristam footer .footitems .socialconnect .sociallinks a .fa-facebook {
+  background: #3b5998;
+}
+
+#kristam footer .footitems .socialconnect .playstore {
   width: 50%;
   margin-top: 10px;
 }
 
-#spangler footer .footitems .socialconnect .playstore img {
+#kristam footer .footitems .socialconnect .playstore img {
   border: 0.5px solid #cccccc;
   border-radius: 10px;
   width: 100%;
+}
+
+#kristam h6 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#kristam h6 a {
+  color: lightblue;
+}
+
+#kristam h6 a:hover {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+  #kristam .promo {
+    padding: 40px 10px 40px 10px;
+    border-bottom: 0.3px solid #f1f1f1;
+  }
+  #kristam .promo .timer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+  #kristam .promo .timer h4 {
+    font-size: 1.2rem;
+  }
+  #kristam .promo .timer h3 {
+    font-size: 1.4rem;
+  }
+  #kristam .promo .timer h2 {
+    font-size: 1.5rem;
+  }
+  #kristam .promo .timer .time {
+    font-size: 2rem;
+  }
+  #kristam .promo .timer .time span {
+    padding-right: 10px;
+  }
+  #kristam .promo .timer .times {
+    font-size: 0.5rem;
+  }
+  #kristam .promo .timer button {
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #kristam .blogclips p {
+    font-size: 0.6rem;
+  }
+  #kristam .blogclips .blogspace {
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+  #kristam .blogclips .blogspace .blogbig {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #kristam .blogclips .blogspace .blogbig button {
+    padding: 5px 15px;
+  }
+  #kristam .blogclips .blogspace .blogbig .bloglabel {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  #kristam .blogclips .blogspace .blogbig .bloglabel h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .blogclips .blogspace .blogbig .blogbottom {
+    margin: 5px 0px 0px 0px;
+    padding: 10px 20px 70px 20px;
+    height: 250px;
+  }
+  #kristam .blogclips .blogspace .blogbig .blogtop {
+    margin: 0px 0px 5px 0px;
+    height: 250px;
+  }
+  #kristam .affiliates {
+    padding: 20px 10px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -2096,6 +2249,639 @@ body {
   }
 }
 
+@media screen and (max-width: 1040px) {
+  #kristam .krislogo {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 185px;
+    left: 40%;
+  }
+  #kristam .weeklyoffer .offerspace {
+    margin: 0 auto 50px auto;
+    display: block;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig button {
+    padding: 10px 30px;
+    margin: 10px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel {
+    padding: 30px;
+    margin-bottom: 150px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel h1 {
+    font-size: 2.3em;
+    margin: 10px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel span {
+    font-weight: 500;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerbottom {
+    margin: 5px 0px 0px 0px;
+    padding: 10px 20px 100px 20px;
+    height: auto;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop {
+    height: auto;
+    margin: 0px 0px 5px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
+    width: 50%;
+    margin: 0px 5px 0px 0px;
+    padding: 10px 10px 150px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright {
+    width: 50%;
+    padding: 10px 0px 150px 10px;
+    margin: 0px 0px 0px 5px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright button {
+    padding: 5px 15px;
+    font-size: 0.7rem;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright span {
+    font-size: 1.5rem;
+    color: #8f47ba;
+    font-weight: 500;
+  }
+  #kristam .aboutcontact {
+    display: block;
+    padding: 40px;
+    text-align: center;
+  }
+  #kristam .aboutcontact .about {
+    width: 100%;
+  }
+  #kristam .aboutcontact .logo {
+    width: 30%;
+    margin: 20px auto;
+  }
+  #kristam .aboutcontact .subscribe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #kristam .krislogo {
+    position: absolute;
+    margin: 20px auto;
+    margin-top: 40px;
+    width: 130px;
+    padding-left: 25px;
+    left: 40%;
+  }
+  #kristam .map {
+    height: 40vh;
+    width: 100%;
+  }
+  #kristam .contactform {
+    background: #8f47ba;
+  }
+  #kristam .contactform .form {
+    position: relative;
+    padding: 40px 40px;
+    margin: 0 auto;
+    top: 100%;
+    width: 400px;
+    height: auto;
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #kristam .krislogo {
+    display: none;
+  }
+  #kristam .searcharea {
+    display: block;
+    padding: 5px 10px;
+  }
+  #kristam .searcharea .address p {
+    font-size: 0.6rem;
+    margin-bottom: 0px;
+    padding: 3px 0px;
+  }
+  #kristam .searcharea .searchbar {
+    text-align: right;
+  }
+  #kristam .searcharea .searchbar input[type=search] {
+    padding: 3px 8px;
+    font-size: 0.6rem;
+  }
+  #kristam .searcharea .searchbar i:hover {
+    cursor: pointer;
+  }
+  #kristam nav {
+    padding: 9px 15px;
+  }
+  #kristam nav .krispic {
+    display: block;
+    margin: 0px;
+  }
+  #kristam nav .krispic img {
+    width: 85px;
+    top: 40px;
+    left: 50%;
+    z-index: 1000;
+  }
+  #kristam nav .navbar-toggle {
+    margin: 5px 0px;
+    padding: 2px;
+    font-size: 1.3rem;
+    color: #8f47ba;
+  }
+  #kristam nav .navs {
+    padding: 0px;
+    display: block;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 0.3px solid #ccc;
+    border-top: 0.3px solid #ccc;
+  }
+  #kristam nav .navs .navlink {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 20px;
+  }
+  #kristam nav .navs a {
+    color: purple;
+    border: none;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-radius: 30px;
+  }
+  #kristam nav .navs a:hover {
+    color: white;
+    background: #8f47ba;
+  }
+  #kristam .hero {
+    height: 77vh;
+    z-index: 1000;
+  }
+  #kristam .pastrychefs {
+    background: #f1f1f1;
+    padding: 10px 10px;
+  }
+  #kristam .pastrychefs .chefs {
+    margin: 0 auto;
+    display: block;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs {
+    width: 100%;
+    text-align: center;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks {
+    display: flex;
+    margin: 20px 0px 20px 0px;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .bar {
+    display: none;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .title {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .title h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Quintessential', cursive;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .title p {
+    font-family: 'Niconne', cursive;
+    font-size: 1.5rem;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs button {
+    background: #8f47ba;
+    padding: 5px 15px;
+    border: #8f47ba;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    margin: 10px 0px 50px 0px;
+  }
+  #kristam .pastrychefs .chefs .chefcards {
+    display: flex;
+    justify-content: space-around;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef {
+    width: 30%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef img {
+    width: 100%;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef .aboutchef {
+    padding: 10px;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef .aboutchef span {
+    margin: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #kristam .hero .textcontent {
+    margin: 25vh auto 2vh auto;
+    color: white;
+    text-align: center;
+  }
+  #kristam .hero .textcontent h1 {
+    font-size: 2.2rem;
+  }
+  #kristam .promo {
+    padding: 20px 10px 40px 10px;
+    border-bottom: 0.3px solid #f1f1f1;
+  }
+  #kristam .promo .timer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+  #kristam .promo .timer h4 {
+    font-size: 0.8rem;
+  }
+  #kristam .promo .timer h3 {
+    font-size: 0.9rem;
+  }
+  #kristam .promo .timer h2 {
+    font-size: 1rem;
+  }
+  #kristam .promo .timer .time {
+    font-size: 1.4rem;
+  }
+  #kristam .promo .timer .time span {
+    padding-right: 10px;
+  }
+  #kristam .promo .timer .times {
+    font-size: 0.5rem;
+  }
+  #kristam .promo .timer button {
+    width: 150px;
+    margin: 20px auto;
+  }
+  #kristam .offers {
+    padding: 30px 20px;
+  }
+  #kristam .offers .swtcks {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .offers .swtcks .bar {
+    height: 72px;
+    width: 48px;
+    border-bottom: 20px solid #f1f1f1;
+  }
+  #kristam .offers .swtcks .title {
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+  }
+  #kristam .offers .swtcks .title h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .offers .swtcks .title p {
+    font-size: 1.1rem;
+  }
+  #kristam .offers .offerlist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #kristam .offers .offerlist .offer {
+    width: 47%;
+    margin-top: 40px;
+  }
+  #kristam .weeklyoffer .swtcks {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .weeklyoffer .swtcks .bar {
+    height: 72px;
+    width: 48px;
+    border-bottom: 20px solid #f1f1f1;
+  }
+  #kristam .weeklyoffer .swtcks .title {
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+  }
+  #kristam .weeklyoffer .swtcks .title h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .weeklyoffer .swtcks .title p {
+    font-size: 1.1rem;
+  }
+  #kristam .weeklyoffer .offerspace {
+    margin: 0 auto 50px auto;
+    display: block;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel {
+    padding: 30px;
+    margin-bottom: 100px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerbottom {
+    margin: 5px 0px 0px 0px;
+    padding: 10px 20px 70px 20px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop {
+    margin: 0px 0px 5px 0px;
+    display: block;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
+    width: 100%;
+    margin: 0px 5px 0px 0px;
+    padding: 10px 10px 80px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright {
+    width: 100%;
+    padding: 10px 0px 80px 10px;
+    margin: 10px 0px 0px 0px;
+  }
+  #kristam .hotandnew {
+    max-width: 1200px;
+    margin: 0px auto 50px auto;
+    padding: 0px 10px;
+  }
+  #kristam .hotandnew .hotnew {
+    display: block;
+  }
+  #kristam .hotandnew .hotnew .hot, #kristam .hotandnew .hotnew .new {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake, #kristam .hotandnew .hotnew .new .hotcake {
+    display: flex;
+    margin: 10px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic {
+    width: 40%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic img, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic img {
+    width: 100%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc {
+    width: 60%;
+    padding: 5px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc h3, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc h3 {
+    font-size: 0.9rem;
+    margin: 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc p, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc p {
+    font-size: 0.8rem;
+    margin: 10px 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc button, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc button {
+    background: #8f47ba;
+    padding: 5px 15px;
+    border: #8f47ba;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    margin: 10px 0px;
+  }
+  #kristam .blogclips .swtcks {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .blogclips .swtcks .bar {
+    height: 72px;
+    width: 48px;
+    border-bottom: 20px solid #f1f1f1;
+  }
+  #kristam .blogclips .swtcks .title {
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+  }
+  #kristam .blogclips .swtcks .title h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .blogclips .swtcks .title p {
+    font-size: 1.1rem;
+  }
+  #kristam footer {
+    padding: 20px 10px;
+  }
+  #kristam footer .footitems {
+    margin: 0 auto;
+    display: block;
+  }
+  #kristam footer .footitems .payment {
+    width: 80%;
+    margin: 20px auto 0px auto;
+    text-align: center;
+  }
+  #kristam footer .footitems .officetime, #kristam footer .footitems .return, #kristam footer .footitems .socialconnect {
+    width: 60%;
+    margin: 20px auto 0px auto;
+    text-align: center;
+  }
+  #kristam footer .footitems .payment .cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  #kristam footer .footitems .payment .cards .card {
+    width: 40%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin: 0px 10px;
+    border-radius: 5px;
+  }
+  #kristam footer .footitems .payment .cards .card img {
+    width: 100%;
+  }
+  #kristam footer .footitems .officetime h4 {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  #kristam footer .footitems .officetime h5 {
+    font-size: 0.7rem;
+  }
+  #kristam footer .footitems .officetime p {
+    font-size: 0.6rem;
+  }
+  #kristam footer .footitems .return {
+    display: block;
+  }
+  #kristam footer .footitems .return h4 {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  #kristam footer .footitems .return ul li {
+    padding-bottom: 3px;
+  }
+  #kristam footer .footitems .return ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+  }
+  #kristam footer .footitems .socialconnect h4 {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a {
+    margin-right: 15px;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a span {
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 8px 12px;
+    color: white;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a .fa-twitter {
+    padding: 8px 9px;
+    background: #00aced;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a .fa-instagram {
+    padding: 8px 10px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a .fa-facebook {
+    background: #3b5998;
+  }
+  #kristam footer .footitems .socialconnect .playstore {
+    width: 50%;
+    margin: 10px auto;
+  }
+  #kristam footer .footitems .socialconnect .playstore img {
+    border: 0.5px solid #cccccc;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #kristam .promo {
+    padding: 40px 10px 40px 10px;
+    border-bottom: 0.3px solid #f1f1f1;
+  }
+  #kristam .promo .timer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+  #kristam .promo .timer h4 {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+  #kristam .promo .timer h3 {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  #kristam .promo .timer h2 {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  #kristam .promo .timer .time {
+    font-size: 0.7em;
+    margin: 3px;
+  }
+  #kristam .promo .timer .time span {
+    padding: 0px 13px;
+  }
+  #kristam .promo .timer .times {
+    font-size: 0.5rem;
+    margin: 3px;
+  }
+  #kristam .promo .timer .times span {
+    padding: 0.5rem;
+  }
+  #kristam .promo .timer button {
+    width: 100px;
+    padding: 3px 8px;
+    margin: 0px auto;
+  }
+  #kristam .pastrychefs p {
+    font-size: 0.6rem;
+  }
+  #kristam .pastrychefs .chefs .chefcards {
+    display: block;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef {
+    width: 80%;
+    margin: 20px auto;
+  }
+  #kristam .contactform .form {
+    padding: 20px 10px;
+    width: 300px;
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact {
+    display: block;
+    padding: 40px 10px;
+    text-align: center;
+  }
+  #kristam .aboutcontact .about {
+    width: 100%;
+  }
+  #kristam .aboutcontact .about h4, #kristam .aboutcontact .about p {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .about h3 {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .logo {
+    width: 50%;
+    margin: 20px auto;
+  }
+  #kristam .aboutcontact .subscribe {
+    width: 100%;
+  }
+  #kristam .aboutcontact .subscribe h4, #kristam .aboutcontact .subscribe p {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .subscribe h3 {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .subscribe input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    outline: none;
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .subscribe input::placeholder {
+    color: #999;
+    font-weight: lighter;
+  }
+  #kristam .aboutcontact .subscribe button {
+    padding: 5px 30px;
+    font-size: 0.6rem;
+    background: #8f47ba;
+    border-radius: 20px;
+    border: none;
+    margin-left: -35px;
+    outline: none;
+  }
+}
+
 @media screen and (max-width: 395px) {
   #morrison footer {
     padding: 40px 0px;
@@ -2140,31 +2926,142 @@ body {
     width: 30px;
     color: white;
   }
-}
-
-@media screen and (max-width: 600px) {
-  #spangler .topnav a:not(:first-child) {
-    display: none;
+  #kristam .hero {
+    height: 77vh;
+    z-index: 1000;
   }
-  #spangler .topnav a.icon {
-    float: right;
+  #kristam .hero .textcontent {
+    margin: 15vh auto 2vh auto;
+  }
+  #kristam .hero .textcontent h1 {
+    font-size: 2rem;
+  }
+  #kristam .hero .textcontent p {
+    padding: 10px 0px;
+    margin: 10px 0px;
+  }
+  #kristam .offers {
+    padding: 10px 10px;
+  }
+  #kristam .offers .swtcks {
+    margin: 0px;
+  }
+  #kristam .offers .swtcks .bar {
+    height: 65px;
+    width: 48px;
+  }
+  #kristam .offers .swtcks .title {
+    text-align: center;
+    margin: 27px 10px 0px 10px;
+  }
+  #kristam .offers .swtcks .title h1 {
+    font-size: 1.2rem;
+  }
+  #kristam .offers .swtcks .title p {
+    font-size: 0.9rem;
+  }
+  #kristam .weeklyoffer .swtcks {
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .weeklyoffer .swtcks .bar {
+    height: 76px;
+    width: 48px;
+  }
+  #kristam .weeklyoffer .swtcks .title {
+    text-align: center;
+    margin: 27px 10px 0px 10px;
+  }
+  #kristam .weeklyoffer .swtcks .title h1 {
+    font-size: 1.2rem;
+  }
+  #kristam .weeklyoffer .swtcks .title p {
+    font-size: 0.9rem;
+  }
+  #kristam .toprating {
+    padding: 0px 10px 10px 10px;
+  }
+  #kristam .toprating .contain {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #kristam .toprating .contain .carousel {
+    padding: 30px 0px 60px 0px;
+  }
+  #kristam .toprating .contain .carousel .item .criticpic {
+    width: 100px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+  #kristam .toprating .contain .carousel .item .criticpic img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  #kristam .toprating .contain .carousel .item h4 {
+    font-size: 1rem;
+  }
+  #kristam .toprating .contain .carousel .item p {
+    font-size: 0.7rem;
+  }
+  #kristam .hotandnew {
+    max-width: 1200px;
+    margin: 0px auto 20px auto;
+    padding: 0px 10px;
+  }
+  #kristam .hotandnew .hotnew {
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
-  #spangler .topnav.responsive {
-    position: relative;
+  #kristam .hotandnew .hotnew .hot, #kristam .hotandnew .hotnew .new {
+    width: 100%;
+    margin-top: 20px;
   }
-  #spangler .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  #kristam .hotandnew .hotnew .hot .hotcake, #kristam .hotandnew .hotnew .new .hotcake {
+    display: flex;
+    margin: 10px;
   }
-  #spangler .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic {
+    width: 45%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic img, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic img {
+    width: 100%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc {
+    width: 55%;
+    padding: 5px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc h3, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc h3 {
+    font-size: 0.7rem;
+    margin: 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc p, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc p {
+    font-size: 0.6rem;
+    margin: 10px 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc button, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc button {
+    background: #8f47ba;
+    padding: 3px 10px;
+    border: #8f47ba;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.6rem;
+    margin: 5px 0px;
+  }
+  #kristam .blogclips .swtcks {
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .blogclips .swtcks .bar {
+    height: 76px;
+    width: 48px;
+  }
+  #kristam .blogclips .swtcks .title {
+    text-align: center;
+    margin: 27px 10px 0px 10px;
+  }
+  #kristam .blogclips .swtcks .title h1 {
+    font-size: 1.2rem;
+  }
+  #kristam .blogclips .swtcks .title p {
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=app.css.map */

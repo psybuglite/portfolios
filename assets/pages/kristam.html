@@ -23,7 +23,7 @@
 
     <!-- html content goes here -->
 
-    <section id="spangler">
+    <section id="kristam">
 
         <!-- Start of the search area -->
 
@@ -37,18 +37,29 @@
         </div>
 
         <!-- end of the search area -->
+
+        <a href="#" class="krislogo"><img src="../img/kris.png" alt=""></a>
+
         <!-- Start of the navigation area -->
 
         <nav>
-            <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">HOME</a>
-                <a href="#news">ABOUT</a>
-                <a href="#contact">PRODUCTS</a>
+            <div class="navbar-header">
+                <div class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="fa fa-navicon"></span>
+                </div>
                 <a href="#" class="krispic"><img src="../img/kris.png" alt=""></a>
-                <a href="#news">GALLERY</a>
-                <a href="#contact">BLOG</a>
-                <a href="#about">CONTACT</a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="navs">
+                    <div class="navlink"><a href="#home" class="active">HOME</a></div>
+                    <div class="navlink"><a href="#news">ABOUT</a></div>
+                    <div class="navlink"><a href="#contact">PRODUCTS</a></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="navlink"><a href="#news">GALLERY</a></div>
+                    <div class="navlink"><a href="#contact">BLOG</a></div>
+                    <div class="navlink"><a href="#about">CONTACT</a></div>
+                </div>
             </div>
         </nav>
 
@@ -56,6 +67,7 @@
         <!-- Start of the hero -->
 
         <section class="hero">
+
             <div class="wave"></div>
             <div class="textcontent">
                 <h1>We Bake Your Dream</h1>
@@ -183,7 +195,7 @@
         <section class="toprating">
             <div class="contain">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
+
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -191,7 +203,6 @@
                         <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>
 
-                    <!-- Wrapper for slides -->
                     <div class="carousel-inner">
 
                         <div class="item active">
@@ -205,9 +216,8 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </p>
-                            <h4>CEO, Spangler Cakes</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur
-                            </p>
+                            <h4>Jerry Watson - Baker's Corner</h4>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum sit amet consectetur ipsum dolor amet consectetur Lorem dolor sit amet consectetur</p>
                         </div>
 
                         <div class="item">
@@ -221,9 +231,8 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                             </p>
-                            <h4>CEO, Spangler Cakes</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur
-                            </p>
+                            <h4>Naomi Fisher - Cakes & Bridals</h4>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum sit amet consectetur ipsum dolor amet consectetur Lorem dolor sit amet consectetur</p>
                         </div>
 
                         <div class="item">
@@ -237,9 +246,8 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                             </p>
-                            <h4>CEO, Spangler Cakes</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur
-                            </p>
+                            <h4>John Nixon - Cake Reviewer</h4>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum sit amet consectetur ipsum dolor amet consectetur Lorem dolor sit amet consectetur</p>
                         </div>
 
                         <div class="item">
@@ -253,7 +261,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                             </p>
-                            <h4>CEO, Spangler Cakes</h4>
+                            <h4>Cathy Jenkins - CEO, Sizzle Bakery</h4>
                             <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur
                             </p>
                         </div>
@@ -310,85 +318,87 @@
         <!-- Start of the hotandnew -->
 
         <section class="hotandnew">
-            <div class="hot">
-                <div class="swtcks">
-                    <div class="title">
-                        <h1>HOT</h1>
+            <div class="hotnew">
+                <div class="hot">
+                    <div class="swtcks">
+                        <div class="title">
+                            <h1>HOT</h1>
+                        </div>
+                        <div class="bar"></div>
                     </div>
-                    <div class="bar"></div>
-                </div>
-                <div class="hotcake">
-                    <div class="hotcakepic">
-                        <img src="../img/hot1.jpg" alt="">
+                    <div class="hotcake">
+                        <div class="hotcakepic">
+                            <img src="../img/hot1.jpg" alt="">
+                        </div>
+                        <div class="hotcakedesc">
+                            <h3>All Chocolate Treat</h3>
+                            <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
+                            <p><s>N3,000</s> N2,500</p>
+                            <button>Order Now</button>
+                        </div>
                     </div>
-                    <div class="hotcakedesc">
-                        <h3>All Chocolate Treat</h3>
-                        <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
-                        <p><s>N3,000</s> N2,500</p>
-                        <button>Order Now</button>
+                    <div class="hotcake">
+                        <div class="hotcakepic">
+                            <img src="../img/hot2.jpg" alt="">
+                        </div>
+                        <div class="hotcakedesc">
+                            <h3>13 Sprinkled Cupcakes</h3>
+                            <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
+                            <p><s>N5,000</s> N4,500</p>
+                            <button>Order Now</button>
+                        </div>
                     </div>
-                </div>
-                <div class="hotcake">
-                    <div class="hotcakepic">
-                        <img src="../img/hot2.jpg" alt="">
-                    </div>
-                    <div class="hotcakedesc">
-                        <h3>13 Sprinkled Cupcakes</h3>
-                        <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
-                        <p><s>N5,000</s> N4,500</p>
-                        <button>Order Now</button>
-                    </div>
-                </div>
-                <div class="hotcake">
-                    <div class="hotcakepic">
-                        <img src="../img/hot3.jpg" alt="">
-                    </div>
-                    <div class="hotcakedesc">
-                        <h3>Cake with Ice Cream Top</h3>
-                        <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
-                        <p><s>N2,000</s> N1,500</p>
-                        <button>Order Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="new">
-                <div class="swtcks">
-                    <div class="title">
-                        <h1>NEW</h1>
-                    </div>
-                    <div class="bar"></div>
-                </div>
-                <div class="hotcake">
-                    <div class="hotcakepic">
-                        <img src="../img/new1.jpg" alt="">
-                    </div>
-                    <div class="hotcakedesc">
-                        <h3>Three Layers of Vanilla Cake</h3>
-                        <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
-                        <p><s>N3,000</s> N2,500</p>
-                        <button>Order Now</button>
+                    <div class="hotcake">
+                        <div class="hotcakepic">
+                            <img src="../img/hot3.jpg" alt="">
+                        </div>
+                        <div class="hotcakedesc">
+                            <h3>Cake with Ice Cream Top</h3>
+                            <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
+                            <p><s>N2,000</s> N1,500</p>
+                            <button>Order Now</button>
+                        </div>
                     </div>
                 </div>
-                <div class="hotcake">
-                    <div class="hotcakepic">
-                        <img src="../img/new2.jpg" alt="">
+                <div class="new">
+                    <div class="swtcks">
+                        <div class="title">
+                            <h1>NEW</h1>
+                        </div>
+                        <div class="bar"></div>
                     </div>
-                    <div class="hotcakedesc">
-                        <h3>Chocolate Cupcakes</h3>
-                        <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
-                        <p><s>N2,500</s> N2,000</p>
-                        <button>Order Now</button>
+                    <div class="hotcake">
+                        <div class="hotcakepic">
+                            <img src="../img/new1.jpg" alt="">
+                        </div>
+                        <div class="hotcakedesc">
+                            <h3>Three Layers of Vanilla Cake</h3>
+                            <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
+                            <p><s>N3,000</s> N2,500</p>
+                            <button>Order Now</button>
+                        </div>
                     </div>
-                </div>
-                <div class="hotcake">
-                    <div class="hotcakepic">
-                        <img src="../img/new3.jpg" alt="">
+                    <div class="hotcake">
+                        <div class="hotcakepic">
+                            <img src="../img/new2.jpg" alt="">
+                        </div>
+                        <div class="hotcakedesc">
+                            <h3>Chocolate Cupcakes</h3>
+                            <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
+                            <p><s>N2,500</s> N2,000</p>
+                            <button>Order Now</button>
+                        </div>
                     </div>
-                    <div class="hotcakedesc">
-                        <h3>Chocolate Center Roll</h3>
-                        <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
-                        <p><s>N3,000</s> N2,000</p>
-                        <button>Order Now</button>
+                    <div class="hotcake">
+                        <div class="hotcakepic">
+                            <img src="../img/new3.jpg" alt="">
+                        </div>
+                        <div class="hotcakedesc">
+                            <h3>Chocolate Center Roll</h3>
+                            <p>Lorem Ipsum dolor sit amet consectetur lorem ipsum dolor</p>
+                            <p><s>N3,000</s> N2,000</p>
+                            <button>Order Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -411,55 +421,52 @@
                             lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet lo rem ipsum dolor sit amet
                         </p>
                         <p>
-                            lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet lo rem ipsum dolor sit amet
+                            lorem ipsum dolor onsectetur lorem ipsum dolor sit amet lo rem ipsum dolor sit amet
                         </p>
                         <p>
-                            lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet lo rem ipsum dolor sit amet
+                            lorem ipsum dolor onsectetur lorem ipsum dolor lo rem ipsum dolor sit amet
                         </p>
-                        <ul>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </ul>
                         <button>Read More</button>
                     </div>
                 </div>
-                <div class="chef">
-                    <img src="../img/chef1.jpg" alt="">
-                    <div class="aboutchef">
-                        <h4>Fatima Amadi</h4>
-                        <h5>CEO</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet</p>
-                        <div class="chefsocial">
-                            <span class="fa fa-facebook"></span>
-                            <span class="fa fa-twitter"></span>
-                            <span class="fa fa-instagram"></span>
+                <div class="chefcards">
+                    <div class="chef">
+                        <img src="../img/chef1.jpg" alt="">
+                        <div class="aboutchef">
+                            <h4>Fatima Amadi</h4>
+                            <h5>CEO</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet</p>
+                            <div class="chefsocial">
+                                <span class="fa fa-facebook"></span>
+                                <span class="fa fa-twitter"></span>
+                                <span class="fa fa-instagram"></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="chef">
-                    <img src="../img/chef3.jpg" alt="">
-                    <div class="aboutchef">
-                        <h4>Cathy Adu</h4>
-                        <h5>Head Trainer</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet</p>
-                        <div class="chefsocial">
-                            <span class="fa fa-facebook"></span>
-                            <span class="fa fa-twitter"></span>
-                            <span class="fa fa-instagram"></span>
+                    <div class="chef">
+                        <img src="../img/chef3.jpg" alt="">
+                        <div class="aboutchef">
+                            <h4>Cathy Adu</h4>
+                            <h5>Head Trainer</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet</p>
+                            <div class="chefsocial">
+                                <span class="fa fa-facebook"></span>
+                                <span class="fa fa-twitter"></span>
+                                <span class="fa fa-instagram"></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="chef">
-                    <img src="../img/chef2.jpg" alt="">
-                    <div class="aboutchef">
-                        <h4>Grace Mohamed</h4>
-                        <h5>Head Baker</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet</p>
-                        <div class="chefsocial">
-                            <span class="fa fa-facebook"></span>
-                            <span class="fa fa-twitter"></span>
-                            <span class="fa fa-instagram"></span>
+                    <div class="chef">
+                        <img src="../img/chef2.jpg" alt="">
+                        <div class="aboutchef">
+                            <h4>Grace Mohamed</h4>
+                            <h5>Head Baker</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet</p>
+                            <div class="chefsocial">
+                                <span class="fa fa-facebook"></span>
+                                <span class="fa fa-twitter"></span>
+                                <span class="fa fa-instagram"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -515,11 +522,11 @@
 
         <section class="affiliates">
             <div class="affcontain">
-                <div class="aff"><img src="../img/forefront.png" alt="Rudigo.jpg"></div>
-                <div class="aff"><img src="../img/mabiri.png" alt="Rudigo.jpg"></div>
-                <div class="aff"><img src="../img/rudigo.png" alt="Rudigo.jpg"></div>
-                <div class="aff"><img src="../img/shabtech.jpg" alt="Rudigo.jpg"></div>
-                <div class="aff"><img src="../img/triplesoft.jpg" alt="Rudigo.jpg"></div>
+                <div class="aff"><img src="../img/aff1.jpg" alt="Affiliate"></div>
+                <div class="aff"><img src="../img/aff2.png" alt="Affiliate"></div>
+                <div class="aff"><img src="../img/aff3.jpg" alt="Affiliate"></div>
+                <div class="aff"><img src="../img/aff4.png" alt="Affiliate"></div>
+                <div class="aff"><img src="../img/aff5.png" alt="Affiliate"></div>
             </div>
         </section>
 
@@ -527,10 +534,9 @@
         <!-- Start of the map -->
 
         <section class="map" id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1505266469594!2d5.7594598706382225!3d5.54468713281763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzInNDYuOSJOIDXCsDQ1JzM4LjciRQ!5e0!3m2!1sen!2sng!4v1514535208331"
-                width="100%" height="100%" frameborder="0 " style="border:0 " allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.9499471369604!2d5.760054276926253!3d5.54548865844256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzInNDMuNyJOIDXCsDQ1JzM5LjUiRQ!5e0!3m2!1sen!2sng!4v1514744401363"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
-
         <!-- end of the map -->
         <!-- Start of the contactform -->
 
@@ -571,7 +577,7 @@
                 <img src="../img/kris.png " alt=" ">
             </div>
             <div class="subscribe ">
-                <h4>SUBSCRIBE EMAIL</h4>
+                <h4>SUBSCRIBE FOR OUR NEWSLETTER</h4>
                 <p>Lorem ipsum dolor sit amet consectetur ipsum dolor consectetur dolor sit amet lorem ipsum</p>
                 <input type="email " name="subsribe " id=" " placeholder="Email "><button>Subscribe</button>
             </div>
@@ -626,33 +632,18 @@
             </div>
         </footer>
 
+        <h6 class="copyright">
+            Made with &#x1F496; and ☕ by <a href="http://github.com/psybuglite">Tonye Dickson</a>
+            <br><br> All rights reserved &copy; 2017.
+        </h6>
+
     </section>
 
-    <!--  <script>
-        function myMap() {
-            var mapCanvas = document.getElementById("map ");
-            var mapOptions = {
-                center: new google.maps.LatLng(5.544274, 5.761106),
-                zoom: 16
-            };
-            var mape = new google.maps.Map(mapCanvas, mapOptions);
-        }
-    </script> -->
 
     <!-- script files and content goes here -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Byawj4jJ91tK4Z1etMPYkGRo5cZ_Z-I&callback=myMap "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
     <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav ");
-            if (x.className === "topnav ") {
-                x.className += " responsive ";
-            } else {
-                x.className = "topnav ";
-            }
-        }
-
         // Set the date we're counting down to
         var countDownDate = new Date("Jan 5, 2018 15:37:25 ").getTime();
 
