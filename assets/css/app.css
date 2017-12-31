@@ -1866,7 +1866,7 @@ button:hover {
 }
 
 #kristam h6 a {
-  color: lightblue;
+  color: #1aa3ff;
 }
 
 #kristam h6 a:hover {
@@ -2405,7 +2405,7 @@ button:hover {
     border-top: 0.3px solid #ccc;
   }
   #kristam nav .navs .navlink {
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
     padding-left: 20px;
   }
