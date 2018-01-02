@@ -1878,7 +1878,7 @@ button:hover {
 body {
   height: 30px;
   width: 100%;
-  background: pink;
+  background: lightgreen;
 }
 
 @media screen and (max-width: 1280px) {
