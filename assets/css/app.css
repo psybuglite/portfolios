@@ -1931,7 +1931,44 @@ button:hover {
 }
 
 #robrainet nav {
+  height: 30vh;
+  padding: 10vh 10px;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+  box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+}
+
+#robrainet nav .navlinks {
+  display: flex;
+  justify-content: center;
+}
+
+#robrainet nav .navlinks .link {
+  margin: 0px 20px;
+  padding: 10px 20px;
+}
+
+#robrainet nav .navlinks a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#robrainet .whoweare {
+  padding: 100px 10px;
+}
+
+#robrainet .whoweare .titlebar .bar {
+  width: 200px;
+  height: 10px;
+  background: lightblue;
   margin: 0 auto;
+  border-radius: 10px;
+}
+
+#robrainet .whoweare .titlebar .title {
+  font-weight: 1.2rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 1280px) {
