@@ -1875,6 +1875,65 @@ button:hover {
   text-decoration: none;
 }
 
+#robrainet header {
+  height: 70vh;
+  padding: 70px 10px;
+}
+
+#robrainet header .deer {
+  width: 150px;
+  margin: 0 auto;
+}
+
+#robrainet header .deer img {
+  width: 100%;
+}
+
+#robrainet header .robname {
+  display: flex;
+  justify-content: center;
+}
+
+#robrainet header .robname h1 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+#robrainet header .robname .o, #robrainet header .robname .b, #robrainet header .robname .ra, #robrainet header .robname .a, #robrainet header .robname .i, #robrainet header .robname .n, #robrainet header .robname .e, #robrainet header .robname .t {
+  margin-left: -10px;
+}
+
+#robrainet header .robname .o {
+  padding-top: 20px;
+}
+
+#robrainet header .robname .ra {
+  padding-top: 20px;
+}
+
+#robrainet header .robname .a {
+  padding-bottom: 5px;
+  margin-top: -2px;
+}
+
+#robrainet header .robname .n {
+  padding-top: 20px;
+}
+
+#robrainet header .robname .t {
+  padding-top: 10px;
+}
+
+#robrainet header .tagline {
+  font-weight: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#robrainet nav {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1280px) {
   #kristam .promo {
     padding: 40px 10px 40px 10px;
