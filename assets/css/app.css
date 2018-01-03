@@ -1875,12 +1875,6 @@ button:hover {
   text-decoration: none;
 }
 
-body {
-  height: 30px;
-  width: 100%;
-  background: lightgreen;
-}
-
 @media screen and (max-width: 1280px) {
   #kristam .promo {
     padding: 40px 10px 40px 10px;
