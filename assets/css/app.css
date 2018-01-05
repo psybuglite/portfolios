@@ -1875,6 +1875,11 @@ button:hover {
   text-decoration: none;
 }
 
+#robrainet {
+  padding: 0px 10px;
+  background: #f1f1f1;
+}
+
 #robrainet header {
   height: 70vh;
   padding: 70px 10px;
@@ -1955,7 +1960,7 @@ button:hover {
 }
 
 #robrainet .whoweare {
-  padding: 100px 10px;
+  padding: 100px 10px 50px 10px;
 }
 
 #robrainet .whoweare .titlebar .bar {
@@ -1969,6 +1974,35 @@ button:hover {
 #robrainet .whoweare .titlebar .title {
   font-weight: 1.1rem;
   text-align: center;
+}
+
+#robrainet .whoweare .textcontent {
+  max-width: 900px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#robrainet .whoweare .textcontent .num {
+  width: 48%;
+  display: flex;
+}
+
+#robrainet .whoweare .textcontent .num .n {
+  padding: 0px 30px;
+}
+
+#robrainet .whoweare .textcontent .num .n h1 {
+  font-size: 4rem;
+}
+
+#robrainet .whoweare .textcontent .num .n .bar {
+  border-top: 3px solid black;
+  width: 80px;
+  height: 30px;
+  margin-top: -20px;
+  transform: rotate(-20deg);
+  background: #f1f1f1;
 }
 
 @media screen and (max-width: 1280px) {
