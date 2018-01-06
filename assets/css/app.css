@@ -2039,6 +2039,34 @@ button:hover {
   text-align: center;
 }
 
+#robrainet .advantages .advantage {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+}
+
+#robrainet .advantages .advantage .pros {
+  width: 30%;
+}
+
+#robrainet .advantages .advantage .pros .pro {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+#robrainet .advantages .advantage .pros .pro .dot {
+  width: 150px;
+  height: 50px;
+  margin: 0px 20px 0px 0px;
+  background-color: lightgreen;
+  border-radius: 50%;
+}
+
+#robrainet .advantages .advantage .brush {
+  width: 40%;
+}
+
 @media screen and (max-width: 1280px) {
   #kristam .promo {
     padding: 40px 10px 40px 10px;
