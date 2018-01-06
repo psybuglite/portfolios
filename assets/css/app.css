@@ -2022,6 +2022,23 @@ button:hover {
   transform: rotate(180deg);
 }
 
+#robrainet .advantages {
+  padding: 100px 10px 50px 10px;
+}
+
+#robrainet .advantages .titlebar .bar {
+  width: 200px;
+  height: 10px;
+  background: orange;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#robrainet .advantages .titlebar .title {
+  font-weight: 1.1rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 1280px) {
   #kristam .promo {
     padding: 40px 10px 40px 10px;
