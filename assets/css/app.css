@@ -2040,7 +2040,7 @@ button:hover {
 }
 
 #robrainet .advantages .advantage {
-  margin: 0 auto;
+  margin: 100px auto 0pc auto;
   display: flex;
   justify-content: space-between;
   max-width: 900px;
