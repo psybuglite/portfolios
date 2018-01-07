@@ -2046,25 +2046,33 @@ button:hover {
   max-width: 900px;
 }
 
-#robrainet .advantages .advantage .pros {
+#robrainet .advantages .advantage .pros2 {
+  text-align: right;
+}
+
+#robrainet .advantages .advantage .pros1, #robrainet .advantages .advantage .pros2 {
   width: 30%;
 }
 
-#robrainet .advantages .advantage .pros .pro {
+#robrainet .advantages .advantage .pros1 .pro, #robrainet .advantages .advantage .pros2 .pro {
   margin-bottom: 30px;
   display: flex;
 }
 
-#robrainet .advantages .advantage .pros .pro .dot {
+#robrainet .advantages .advantage .pros1 .pro .dot, #robrainet .advantages .advantage .pros2 .pro .dot {
   width: 150px;
   height: 50px;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 20px 0px 20px;
   background-color: lightgreen;
   border-radius: 50%;
 }
 
 #robrainet .advantages .advantage .brush {
-  width: 40%;
+  width: 20%;
+}
+
+#robrainet .advantages .advantage .brush img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1280px) {
