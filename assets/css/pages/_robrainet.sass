@@ -46,11 +46,18 @@
       justify-content: center
       .link
         margin: 0px 20px
-        padding: 10px 20px
+        padding: 5px 20px
       a
         color: black
         font-weight: 500
         font-size: 1.2rem
+        text-decoration: none
+        border-radius: 30px
+        transition: all 0.3s
+
+      a:hover
+        color: white
+        background: rgba(0, 0, 0, 0.8)
 
   .whoweare
     padding: 100px 10px 5px 10px
@@ -98,6 +105,18 @@
   .firstdrip
     width: 100%
     transform: rotate(180deg)
+
+  .showcase
+
+    .sliders
+      max-width: 1000px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+
+    .carousel
+      width: 300px
+
 
 
   .advantages
@@ -172,7 +191,7 @@
       .client
         width: 18%
         background: white
-        padding: 0px 10px
+        padding: 20px
         img
           width: 100%
 
@@ -191,4 +210,9 @@
         span
           padding: 10px 12px
           background: white
+          font-size: 1.5rem
           color: black
+        .fa-instagram
+          padding: 10px 13px
+        .fa-facebook
+          padding: 10px 16px
