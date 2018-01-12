@@ -44,24 +44,19 @@
                 <span><h1 class="e">E</h1></span>
                 <span><h1 class="t">T</h1></span>
             </div>
-            <p class="tagline">
-                Lorem ipsum dolor sit amet consecteteur ...
-            </p>
+            <p class="tagline">Colour your dreams, bring your dreams to life ...</p>
+
+            <nav>
+                <div class="navlinks">
+                    <a href="#" class="link">HOME</a>
+                    <a href="#" class="link">ABOUT US</a>
+                    <a href="#" class="link">PORTFOLIO</a>
+                    <a href="#" class="link">CONTACT</a>
+                </div>
+            </nav>
         </header>
 
         <!-- end of the header -->
-        <!-- start of the nav -->
-
-        <nav>
-            <div class="navlinks">
-                <a href="#" class="link">HOME</a>
-                <a href="#" class="link">ABOUT US</a>
-                <a href="#" class="link">PORTFOLIO</a>
-                <a href="#" class="link">CONTACT</a>
-            </div>
-        </nav>
-
-        <!-- end of the nav -->
         <!-- start of the whoweare -->
 
         <section class="whoweare">
@@ -115,7 +110,7 @@
                 <div class="top-div"><img src="../img/sample5.jpg" alt=""></div>
                 <div class="top-div"><img src="../img/sample6.jpg" alt=""></div>
             </div>
-            <div class="bottomcarousel">
+            <div class="bottomcarousel" dir="rtl">
                 <div class="top-div"><img src="../img/sample4.jpg" alt=""></div>
                 <div class="top-div"><img src="../img/sample5.jpg" alt=""></div>
                 <div class="top-div"><img src="../img/sample6.jpg" alt=""></div>
@@ -127,7 +122,6 @@
 
         <img src="../img/purplecover.png" width="100%" alt="">
         <!-- end of the showcase -->
-
 
         <section class="advantages">
             <div class="titlebar">
@@ -220,23 +214,30 @@
                 <div class="socialcontacts">
                     <h4>CONNECT</h4>
                     <br>
-                    <span class="fa fa-twitter"></span>
-                    <span class="fa fa-instagram"></span>
-                    <span class="fa fa-facebook"></span>
+                    <div class="footcontent">
+                        <span class="fa fa-twitter"></span>
+                        <span class="fa fa-instagram"></span>
+                        <span class="fa fa-facebook"></span>
+                    </div>
                 </div>
                 <div class="locations">
                     <h4>LOCATIONS</h4>
-                    <br7 <p>Port Harcourt</p>
+                    <br>
+                    <div class="footcontent">
+                        <p>Port Harcourt</p>
                         <p>Warri</p>
                         <p>Abuja</p>
+                    </div>
                 </div>
                 <div class="contact">
                     <h4>CONTACT</h4>
                     <br>
-                    <a href="mailto:robrainet@gmailcom">robrainet@gmail.com</a>
-                    <br>
-                    <br>
-                    <p>+234 (0) 999 000 9999</p>
+                    <div class="footcontent">
+                        <a href="mailto:robrainet@gmailcom">robrainet@gmail.com</a>
+                        <br>
+                        <br>
+                        <p>+234 (0) 999 000 9999</p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -256,17 +257,58 @@
                 dots: false,
                 autoplay: true,
                 infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                speed: 500,
-                rtl: false
+                speed: 2000,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        arrows: true
+                    }
+                }, {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
             });
             $('.bottomcarousel').slick({
                 dots: false,
                 autoplay: true,
                 infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1
+                speed: 2000,
+                rtl: true,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        arrows: true
+                    }
+                }, {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
             });
         });
     </script>

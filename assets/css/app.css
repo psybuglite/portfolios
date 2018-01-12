@@ -1875,12 +1875,12 @@ button:hover {
 }
 
 #robrainet {
-  background: #f1f1f1;
+  background: #fcfcfc;
 }
 
 #robrainet header {
-  height: 70vh;
-  padding: 70px 10px;
+  height: 100vh;
+  padding: 20px 10px;
 }
 
 #robrainet header .deer {
@@ -1895,6 +1895,7 @@ button:hover {
 #robrainet header .robname {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 #robrainet header .robname h1 {
@@ -1934,7 +1935,6 @@ button:hover {
 }
 
 #robrainet nav {
-  height: 30vh;
   padding: 10vh 10px;
   margin: 0px 10px;
   -webkit-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
@@ -1979,7 +1979,7 @@ button:hover {
 }
 
 #robrainet .whoweare .titlebar .title {
-  font-weight: 1.1rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -2009,7 +2009,7 @@ button:hover {
   height: 30px;
   margin-top: -20px;
   transform: rotate(-20deg);
-  background: #f1f1f1;
+  background: #fcfcfc;
 }
 
 #robrainet .whoweare .more {
@@ -2030,11 +2030,8 @@ button:hover {
   transform: rotate(180deg);
 }
 
-#robrainet .showcase .sliders {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+#robrainet .showcase {
+  padding: 0px 10px;
 }
 
 #robrainet .showcase .topcarousel, #robrainet .showcase .bottomcarousel {
@@ -2569,11 +2566,101 @@ button:hover {
     margin-top: 0px;
     font-size: 0.9rem;
   }
+  #robrainet .advantages .titlebar .bar {
+    width: 200px;
+    height: 10px;
+    background: orange;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  #robrainet .advantages .titlebar .title h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #robrainet .advantages .advantage {
+    margin: 100px auto 0pc auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+  #robrainet .advantages .advantage .pros2 {
+    text-align: right;
+  }
+  #robrainet .advantages .advantage .pros1, #robrainet .advantages .advantage .pros2 {
+    width: 45%;
+  }
+  #robrainet .advantages .advantage .brush {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #robrainet header {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #robrainet header .deer {
+    width: 120px;
+    margin: 0 auto;
+  }
+  #robrainet header .deer img {
+    width: 100%;
+  }
+  #robrainet header .robname {
+    margin-bottom: 30px;
+  }
+  #robrainet header .robname h1 {
+    font-size: 3.5rem;
+  }
+  #robrainet header .robname .o, #robrainet header .robname .b, #robrainet header .robname .ra, #robrainet header .robname .a, #robrainet header .robname .i, #robrainet header .robname .n, #robrainet header .robname .e, #robrainet header .robname .t {
+    margin-left: -5px;
+  }
+  #robrainet header .robname .o {
+    padding-top: 10px;
+  }
+  #robrainet header .robname .ra {
+    padding-top: 10px;
+  }
+  #robrainet header .robname .a {
+    padding-bottom: 5px;
+    margin-top: -2px;
+  }
+  #robrainet header .robname .n {
+    padding-top: 10px;
+  }
+  #robrainet header .robname .t {
+    padding-top: 10px;
+  }
+  #robrainet header .tagline {
+    font-weight: 5px;
+    text-align: center;
+    margin: 20px auto 0px auto;
+    max-width: 280px;
+  }
+  #robrainet nav {
+    padding: 10vh 10px;
+    margin: 0px 5px;
+  }
+  #robrainet nav .navlinks {
+    display: flex;
+    justify-content: center;
+  }
+  #robrainet nav .navlinks .link {
+    margin: 0px 5px;
+    padding: 3px 5px;
+  }
+  #robrainet nav .navlinks a {
+    color: black;
+    font-weight: 500;
+    font-size: 0.6rem;
   }
 }
 
@@ -3098,6 +3185,123 @@ button:hover {
     width: 100%;
     padding: 5px 10px;
   }
+  #robrainet .whoweare {
+    padding: 50px 10px 5px 10px;
+  }
+  #robrainet .whoweare .titlebar .bar {
+    width: 200px;
+    height: 10px;
+    background: #1aa3ff;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  #robrainet .whoweare .titlebar .title h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #robrainet .whoweare .textcontent {
+    max-width: 900px;
+    margin: 50px auto;
+    display: block;
+  }
+  #robrainet .whoweare .textcontent .num {
+    width: 100%;
+    display: flex;
+  }
+  #robrainet .whoweare .textcontent .num .n {
+    padding: 0px 20px;
+  }
+  #robrainet .whoweare .textcontent .num .n h1 {
+    font-size: 2rem;
+  }
+  #robrainet .whoweare .textcontent .num .n .bar {
+    border-top: 3px solid black;
+    width: 50px;
+    height: 30px;
+    margin-top: -15px;
+    transform: rotate(-20deg);
+    background: #fcfcfc;
+  }
+  #robrainet .whoweare .textcontent .num .text h3 {
+    font-size: 1.1rem;
+  }
+  #robrainet .whoweare .textcontent .num .text p {
+    font-size: 0.7rem;
+  }
+  #robrainet .whoweare .more {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  #robrainet .whoweare .more button {
+    padding: 5px 10px;
+  }
+  #robrainet .advantages .advantage {
+    margin: 50px auto 0px auto;
+    display: block;
+  }
+  #robrainet .advantages .advantage .pros1, #robrainet .advantages .advantage .pros2 {
+    width: 100%;
+  }
+  #robrainet .advantages .advantage .pros1 .pro, #robrainet .advantages .advantage .pros2 .pro {
+    margin-bottom: 5px;
+    display: flex;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .text h4, #robrainet .advantages .advantage .pros2 .pro .text h4 {
+    font-size: 1rem;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .text p, #robrainet .advantages .advantage .pros2 .pro .text p {
+    font-size: 0.7rem;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot span, #robrainet .advantages .advantage .pros2 .pro .dot span {
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot .fa-clock-o, #robrainet .advantages .advantage .pros2 .pro .dot .fa-clock-o {
+    padding: 10px 11px;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot .fa-magic, #robrainet .advantages .advantage .pros2 .pro .dot .fa-magic {
+    padding: 10px 10px;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot .fa-paint-brush, #robrainet .advantages .advantage .pros2 .pro .dot .fa-paint-brush {
+    padding: 10px 10px;
+  }
+  #robrainet .advantages .advantage .pros2 {
+    text-align: left;
+  }
+  #robrainet .advantages .advantage .pros2 .pro {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #robrainet .testify {
+    padding: 50px 10px 10px 10px;
+  }
+  #robrainet .testify .titlebar {
+    margin-bottom: 30px;
+  }
+  #robrainet .testify .titlebar .bar {
+    width: 200px;
+    height: 10px;
+    background: #1aa3ff;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  #robrainet .testify .titlebar .title {
+    font-weight: 1.1rem;
+    text-align: center;
+  }
+  #robrainet .testify .clients {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #robrainet .testify .clients .client {
+    width: 45%;
+    padding: 10px;
+    margin: 5px 5px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -3207,6 +3411,36 @@ button:hover {
     border: none;
     margin-left: -35px;
     outline: none;
+  }
+  #robrainet footer {
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #robrainet footer a {
+    color: #ccc;
+  }
+  #robrainet footer .footcontent {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+  }
+  #robrainet footer .footcontent .socialcontacts span {
+    padding: 5px 6px;
+    background: white;
+    font-size: 1.3rem;
+    color: black;
+  }
+  #robrainet footer .footcontent .socialcontacts .fa-instagram {
+    padding: 5px 7px;
+  }
+  #robrainet footer .footcontent .socialcontacts .fa-facebook {
+    padding: 5px 9px;
+  }
+  #robrainet footer .footcontent .socialcontacts, #robrainet footer .footcontent .locations, #robrainet footer .footcontent .contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
   }
 }
 
