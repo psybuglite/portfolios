@@ -17,21 +17,7 @@
         Robrainet Painting
     </title>
     <style>
-        .trial {
-            height: 400px;
-            width: 50%;
-            margin: 0 auto;
-        }
-        
-        .trial-div {
-            height: 400px;
-            width: 400px;
-        }
-        
-        .slick-prev:before,
-        .slick-next:before {
-            color: black;
-        }
+
     </style>
 </head>
 
@@ -121,19 +107,21 @@
 
         <section class="showcase">
 
-            <div class="sliders">
-
+            <div class="topcarousel">
+                <div class="top-div"><img src="../img/sample1.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample2.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample3.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample4.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample5.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample6.jpg" alt=""></div>
             </div>
-
-            <div class="trial">
-                <div class="trial-div" style="background-color:pink; margin: 0 50px"></div>
-                <div class="trial-div" style="background-color:lightblue; margin: 0 50px"></div>
-                <div class="trial-div" style="background-color:lightgreen; margin: 0 50px"></div>
-                <div class="trial-div" style="background-color:lightblue; margin: 0 50px"></div>
-                <div class="trial-div" style="background-color:lightgreen; margin: 0 50px"></div>
-                <div class="trial-div" style="background-color:pink; margin: 0 50px"></div>
-                <div class="trial-div" style="background-color:lightblue; margin 0: 50px"></div>
-                <div class="trial-div" style="background-color:lightgreen; margin: 0 50px"></div>
+            <div class="bottomcarousel">
+                <div class="top-div"><img src="../img/sample6.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample3.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample4.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample1.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample5.jpg" alt=""></div>
+                <div class="top-div"><img src="../img/sample2.jpg" alt=""></div>
             </div>
         </section>
 
@@ -264,12 +252,21 @@
     <script type="text/javascript" src="../slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.trial').slick({
+            $('.topcarousel').slick({
                 dots: false,
                 autoplay: true,
                 infinite: true,
                 slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToScroll: 1,
+                speed: 500,
+                rtl: false
+            });
+            $('.bottomcarousel').slick({
+                dots: false,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
             });
         });
     </script>
